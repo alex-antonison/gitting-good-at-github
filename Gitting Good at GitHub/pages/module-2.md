@@ -46,5 +46,6 @@ git clone {repository link}
 # Commit Changes - Activity
 
 1. Create a file that ends with `.md`
-2. `git add {file name}.md`
-3. `git commit -m "{insert your descriptive message here}"`
+2. Add some text to it.
+3. `git add {file name}.md`
+4. `git commit -m "{insert your descriptive message here}"`
