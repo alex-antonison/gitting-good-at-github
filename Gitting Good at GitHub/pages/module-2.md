@@ -43,9 +43,21 @@ git clone {repository link}
 
 ---
 
-# Commit Changes - Activity
+# Commit Changes
 
 1. Create a file that ends with `.md`
 2. Add some text to it.
 3. `git add {file name}.md`
 4. `git commit -m "{insert your descriptive message here}"`
+5. Check **Commit History.** You can use `git log` but GitHub Desktop or VS Code is easier
+
+---
+
+# Undoing Changes
+
+* `git commit --amend` allows you to change the last commit
+  * Update git commit message
+* `git checkout origin/main {path/to/file name}`
+  * This will reset the file to what is in the main branch
+* `git revert HEAD`
+  * This will create a new commit reverting your last commit.
