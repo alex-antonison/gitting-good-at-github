@@ -1,10 +1,11 @@
-# Introduction to Version Control and Git
+# Module 1 - Introduction to Version Control and Git
 
 * What is Version Control?
   * What are the benefits of Version Control?
 * What is Git?
   * Key Git Concepts
-  * Setting up Git and GitHub
+* What is GitHub
+  * Setting up Git with GitHub
 
 ---
 
@@ -34,15 +35,29 @@
 
 # Key Git Concepts
 
+<div class="text-2xl">
+
 * **Repository (repo).** A directory where Git stores the history of your project.
 * **Commit.** A snapshot of your changes, along with a message describing what was done.
 * **Branch.** A parallel version of your project for experimenting or developing new features.
 * **Merge.** Combines changes from one branch into another, integrating work from different sources.
+* **Fork.** Creating a copy of a repository in your account.
+</div>
 
 ---
 
-# Setting up Git and GitHub
+# What is GitHub?
+
+* An online platform to store, manage, and track changes to code using Git.
+* A **communication** platform.
+* Has features like GitHub Actions for running and deploying code.
+* Supports blogs via GitHub Pages
+* Productivity tools like Issue tracking, project management, and a wiki.
+
+---
+
+# Setting up Git with GitHub
 
 * Install GitHub Desktop at [https://github.com/apps/desktop](https://github.com/apps/desktop)
 * Authenticate with GitHub.
-* Git started!
+* Let's git started!
