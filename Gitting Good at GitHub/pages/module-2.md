@@ -45,7 +45,7 @@ git clone {repository link}
 
 # Commit Changes
 
-1. Create a file that ends with `.md`
+1. Create a file in `exercises` called `new_file.txt`
 2. Add some text to it.
 3. `git add {file name}.md`
 4. `git commit -m "{insert your descriptive message here}"`
@@ -57,7 +57,9 @@ git clone {repository link}
 
 * `git commit --amend` allows you to change the last commit
   * Update git commit message
-* `git checkout origin/main {path/to/file name}`
-  * This will reset the file to what is in the main branch
 * `git revert HEAD`
   * This will create a new commit reverting your last commit.
+* `git checkout origin/main {path/to/file name}`
+  * This will reset the file to what is in the main branch.
+* `git reset HEAD~1`
+  * This resets the head back a commit removing your commit"
