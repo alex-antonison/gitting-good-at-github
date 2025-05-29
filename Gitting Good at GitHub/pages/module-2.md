@@ -43,7 +43,7 @@ git clone {repository link}
 
 ---
 
-# Commit Changes
+# Committing Changes (Activity)
 
 1. Create a file in `exercises` called `new_file.txt`
 2. Add some text to it.
@@ -55,11 +55,22 @@ git clone {repository link}
 
 # Undoing Changes
 
+<div class="text-2xl">
+
 * `git commit --amend` allows you to change the last commit
   * Update git commit message
 * `git reset HEAD~1`
-  * This resets the head back a commit removing your commit"
+  * This simply undoes the last commit
 * `git revert HEAD`
-  * This will create a new commit reverting your last commit.
+  * This will create a new commit reverting your last commit
 * `git checkout origin/main {path/to/file name}`
-  * This will reset the file to what is in the main branch.
+  * This will reset the file to what is in the main branch
+</div>
+
+---
+
+# Undoing Changes (Activity)
+
+TODO: ACtivity
+
+---
