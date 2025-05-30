@@ -30,3 +30,7 @@ This session be broken into the following modules:
    2. GitHub Actions
 
 The last part of this course will involve working with your classmates on an analytics project where participants will be making changes to an analytics project.
+
+## How to Run Slides
+
+1. [Install node and npm](https://nodejs.org/en/download/)
