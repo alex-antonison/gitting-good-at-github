@@ -71,6 +71,4 @@ git clone {repository link}
 
 # Undoing Changes (Activity)
 
-TODO: ACtivity
-
----
+TODO: Activity
