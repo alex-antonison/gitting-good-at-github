@@ -1,2 +1,1 @@
-# Module 5 - Advanced Git and GitHub Features
-
+# Module 5 - Simulated Project

@@ -28,7 +28,7 @@ title: Gitting Good at GitHub
 * Module 1 - Introduction to Version Control and Git
 * Module 2 - Basic Git Operations
 * Module 3 - Branching and Merging
-* Module 4 - Working with Remote Repositories (GitHub)
+* Module 4 - Collaboration on GitHub
 * Module 5 - Simulated Project
 * Module 6 - Advanced Git and GitHub Features
 

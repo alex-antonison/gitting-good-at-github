@@ -4,7 +4,6 @@
 * Working with Branches
 * Merging Branches
 * Merge Conflicts
-* Branching Strategies
 
 ---
 
@@ -59,3 +58,11 @@ layout: two-cols
 <div class="flex justify-center items-center h-full">
   <img src="./images/example-merge-conflict.png" />
 </div>
+
+---
+
+# Merge Conflict (Activity)
+
+TODO: Merge conflict Activity
+
+
