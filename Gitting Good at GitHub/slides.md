@@ -34,21 +34,25 @@ title: Gitting Good at GitHub
 
 
 ---
-src: ./pages/module-1.md
+src: ./pages/module-1-introduction-to-version-control-and-git.md
 ---
 
 ---
-src: ./pages/module-2.md
+src: ./pages/module-2-basic-git-operations.md
 ---
 
 ---
-src: ./pages/module-3.md
+src: ./pages/module-3-branching-and-merging.md
 ---
 
 ---
-src: ./pages/module-4.md
+src: ./pages/module-4-collaboration-on-github.md
 ---
 
 ---
-src: ./pages/module-5.md
+src: ./pages/module-5-simulated-project.md
+---
+
+---
+src: ./pages/module-6-advanced-git-and-github-features.md
 ---
