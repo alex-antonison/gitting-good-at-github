@@ -34,3 +34,5 @@ The last part of this course will involve working with your classmates on an ana
 ## How to Run Slides
 
 1. [Install node and npm](https://nodejs.org/en/download/)
+2. Install sli.dev `npm i -g @slidev/cli`
+3. Run `make slides`
