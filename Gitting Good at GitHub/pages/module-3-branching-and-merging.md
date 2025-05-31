@@ -14,7 +14,6 @@
   * For individual projects, working in `main` is "okay"
   * For team based projects, always need to create branches
 
-
 ---
 
 # **Working with Branches**

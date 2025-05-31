@@ -1,7 +1,7 @@
 # **Module 2 - Basic Git Operations**
 
 * Getting started working with Repositories
-* Committing Changes
+* Staging and Committing Changes
 * When to Commit
 * Undoing Changes
 * Ignoring and Removing Files
@@ -45,7 +45,7 @@ TODO: Ignoring files example
 
 ---
 
-# **Committing Changes**
+# **Staging and Committing Changes**
 <div class="text-2xl">
 
 * You can either add all files with `git add -A` or `git add path/to/filename`
@@ -61,13 +61,13 @@ TODO: Ignoring files example
 # **Committing Changes (Activity)**
 <div class="text-2xl">
 
-1. Create a file in `exercises` directory called `new_file.txt`
-2. Add some text to it.
-3. `git add new_file.md`
+1. Make changes to the `existing_file.txt`
+2. Create a file in `exercises` directory called `new_file.txt` and add text to it.
+3. `git commit -am "{insert your descriptive message here}"`
 4. `git status`
-5. `git commit -m "{insert your descriptive message here}"`
-6. Make changes to the `existing_file.txt`
-7. `git commit -am "{insert your descriptive message here}"`
+5. `git add exercises/new_file.md`
+6. `git status`
+7. `git commit -m "{insert your descriptive message here}"`
 8. Check **Commit History.** You can use `git log` but GitHub Desktop or VS Code is easier
 </div>
 ---
