@@ -3,6 +3,7 @@
 * Getting started working with Repositories
 * Ignoring Files
 * Committing Changes
+* When to Commit
 * Undoing Changes
 * Removing Files
 
@@ -43,27 +44,44 @@ git clone {repository link}
 
 TODO: Ignoring files example
 
+---
+
 # **Committing Changes**
 <div class="text-2xl">
 
 * You can either add all files with `git add -A` or `git add path/to/filename`
-* Once a file is being tracked, you can then `commit` the changes with `git commit -m"{insert message here}"`
-  * When do you commit?
-    * Committing too often leads to noisy commits
-    * Committing too infrequently makes it hard to find changes
-  * _The best time to commit is when you have completed a "thought"_
-    * This could be when you finish a function, update some business logic, etc.
+  * Once a file is `added` it is then being `tracked`
+* To see the current state of tracked files, you can use `git status`
+* Once a file is being tracked, you can then `commit` the changes with
+  * `git commit -m"{insert message here}"`
+* You can also use the option `-am` to commit all tracked and changed files
+  * `git commit -am"{insert message here}"`
+
 </div>
 
 ---
 
 # **Committing Changes (Activity)**
+<div class="text-2xl">
 
-1. Create a file in `exercises` called `new_file.txt`
+1. Create a file in `exercises` directory called `new_file.txt`
 2. Add some text to it.
-3. `git add {file name}.md`
-4. `git commit -m "{insert your descriptive message here}"`
-5. Check **Commit History.** You can use `git log` but GitHub Desktop or VS Code is easier
+3. `git add new_file.md`
+4. `git status`
+5. `git commit -m "{insert your descriptive message here}"`
+6. Make changes to the `existing_file.txt`
+7. `git commit -am "{insert your descriptive message here}"`
+8. Check **Commit History.** You can use `git log` but GitHub Desktop or VS Code is easier
+</div>
+---
+
+# **When to Commit?**
+
+* When do you commit?
+  * Committing too often leads to noisy commits
+  * Committing too infrequently makes it hard to find changes
+* _The best time to commit is when you have completed a "thought"_
+  * This could be when you finish a function, update some business logic, etc.
 
 ---
 
@@ -74,9 +92,7 @@ TODO: Ignoring files example
 * `git commit --amend` allows you to change the last commit
   * Update git commit message
 * `git reset HEAD~1`
-  * This simply undoes the last commit
-* `git revert HEAD`
-  * This will create a new commit reverting your last commit
+  * This simply undoes the last commit and leaves files intact
 * `git checkout origin/main path/to/filename`
   * This will reset the file to what is in the main branch
 </div>
