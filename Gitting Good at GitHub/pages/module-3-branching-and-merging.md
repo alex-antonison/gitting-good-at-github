@@ -12,7 +12,7 @@
 * A branch lets you work on changes separately from the main code.
   * For individual projects, working in `main` is "okay"
   * It is a good habit to always work in branches
-  * For team based projects, always need to create branches
+  * For team based projects, always need to work in branches
 
 ---
 
