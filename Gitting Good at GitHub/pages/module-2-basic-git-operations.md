@@ -141,4 +141,6 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 1. Add a `.secrets` folder to the project.
 2. Add a `.env` file to the `.secrets` directory.
 3. Add and commit the `.env` file.
-4. 
+4. Add `.secrets/` to the `.gitignore` file.
+5. Remove the `.env` file from git cache
+   1. `git rm --cache .secrets/.env`
