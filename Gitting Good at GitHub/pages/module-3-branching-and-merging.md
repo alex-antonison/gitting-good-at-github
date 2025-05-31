@@ -20,7 +20,7 @@
 <div class="text-2xl">
 
 * Create a branch and then checkout that branch:
-  * Create a branch `git branch {insert-descriptive-branch-name}` 
+  * Create a branch `git branch {insert-descriptive-branch-name}`
   * To checkout a `git checkout {insert-descriptive-branch-name}`
 * Create and checkout a branch:
   * `git checkout -b {insert-descriptive-branch-name}`
@@ -70,5 +70,3 @@ layout: two-cols
 # **Merge Conflict (Activity)**
 
 TODO: Merge conflict Activity
-
-
