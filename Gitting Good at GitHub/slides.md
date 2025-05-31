@@ -32,7 +32,6 @@ title: Gitting Good at GitHub
 * Module 5 - Simulated Project
 * Module 6 - Advanced Git and GitHub Features
 
-
 ---
 src: ./pages/module-1-introduction-to-version-control-and-git.md
 ---

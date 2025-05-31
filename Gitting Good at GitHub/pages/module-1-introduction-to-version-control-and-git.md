@@ -40,8 +40,7 @@
 * **Repository (repo).** A directory where Git stores the history of your project.
 * **Commit.** A snapshot of your changes, along with a message describing what was done.
 * **Branch.** A branch lets you work on changes separately from the main code.
-* **Merge.** Combines changes from one branch into another, integrating work from different sources.
-* **Fork.** Creating a copy of a repository in your account.
+* **Merge.** Combines commits from one branch into another.
 </div>
 
 ---

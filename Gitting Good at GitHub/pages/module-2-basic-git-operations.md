@@ -1,10 +1,11 @@
 # **Module 2 - Basic Git Operations**
 
 * Getting started working with Repositories
+* Ignoring Files
 * Staging and Committing Changes
 * When to Commit
 * Undoing Changes
-* Ignoring and Removing Files
+* Removing Files
 
 ---
 layout: two-cols

@@ -15,20 +15,22 @@
 ---
 
 # **Creating Pull Requests**
+<div class="text-2xl">
 
 * [To create a successful Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request), it should convey the following:
   * **Context.** Why are these changes being made to the code base?
   * **Description.** You should include a summary of the changes being made.
   * **Tests + Documentation.** You should include any required tests or documentation.
-
+  * **Pull Request Template.** Streamlines organizing Pull Request descriptions.
+</div>
 ---
 
 # **Reviewing Pull Requests**
 
 * [When reviewing a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request), you can do a couple of things:
-  * **In-line Comments.** Making in-line comments helps direct someone directly to a bit of code.
-  * **Pull Request Comments.** These can be helpful if there is a high level comment about a Pull Request.
+  * **In-line Code Comments.** Making in-line comments helps direct someone directly to a bit of code.
   * **Suggested Changes.** Add a suggested change to help improve a Pull Request.
+  * **Pull Request Comments.** These can be helpful if there is a high level comment about a Pull Request.
 
 ---
 layout: two-cols
