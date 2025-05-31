@@ -130,4 +130,7 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 
 # **Removing Files (Activity)**
 
-TODO: Ignore and remove activity
+1. Remove `new_folder` from `.gitignore`
+2. Stage the `new_folder/new_file.txt` file.
+3. Commit the `new_folder/new_file.txt` file.
+4. 
