@@ -34,12 +34,11 @@ TODO: Update this to match new presentation structure
    3. Reviewing Pull Requests
    4. Merge Types
 5. Simulated Project
+   1. Group will work together on a project to practice working with Git and GitHub
 6. Advanced Git and GitHub Features
    1. pre-commit
    2. GitHub Actions
    3. Rebasing
-
-The last part of this course will involve working with your classmates on an analytics project where participants will be making changes to an analytics project.
 
 ## How to Run Slides
 
