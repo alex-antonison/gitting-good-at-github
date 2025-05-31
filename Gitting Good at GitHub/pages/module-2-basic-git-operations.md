@@ -90,8 +90,6 @@ git clone {repository link}
 # **Undoing Changes**
 <div class="text-2xl">
 
-* `git commit --amend` allows you to change the last commit
-  * Update git commit message
 * `git reset HEAD~1`
   * This simply undoes the last commit with files intact
 * `git checkout origin/main path/to/filename`
@@ -102,7 +100,7 @@ git clone {repository link}
 
 # **Undoing Changes (Activity)**
 
-TODO: Activity
+1. To undo your last commit, run `git reset HEAD~1`
 
 ---
 
