@@ -1,8 +1,8 @@
 # **Module 1 - Introduction to Version Control and Git**
 
-* What is Version Control?
+* What is Version Control
   * What are the benefits of Version Control?
-* What is Git?
+* What is Git
   * Key Git Concepts
 * What is GitHub
   * Setting up Git with GitHub
@@ -41,6 +41,7 @@
 * **Commit.** A snapshot of your changes, along with a message describing what was done.
 * **Branch.** A branch lets you work on changes separately from the main code.
 * **Merge.** Combines commits from one branch into another.
+* **Tracks Files.** Git tracks files and their file paths, not directories.
 </div>
 
 ---

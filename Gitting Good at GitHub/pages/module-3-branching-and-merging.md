@@ -1,6 +1,6 @@
 # **Module 3 - Branching and Merging**
 
-* What are Branches?
+* What are Branches
 * Working with Branches
 * Merging Branches
 * Merge Conflicts
@@ -33,7 +33,10 @@
 
 # **Working with Branches (Activity)**
 
-TODO: Branch Activity
+1. Create a branch `git checkout -b my-new-branch`
+2. Delete the branch:
+   1. `git checkout main`
+   2. `git branch -D my-new-branch`
 
 ---
 
@@ -52,6 +55,17 @@ TODO: Branch Activity
 </div>
 
 ---
+
+# **Merging Branches (Activity)**
+
+1. Create a branch `git branch add-feature`
+2. Go back to main `git checkout main`
+3. Commit a new file to main
+4. Checkout `add-feature` branch
+5. Merge main into `add-feature` branch
+   1. `git merge main`
+
+---
 layout: two-cols
 ---
 
@@ -68,5 +82,14 @@ layout: two-cols
 ---
 
 # **Merge Conflict (Activity)**
+<div class="text-2xl">
 
-TODO: Merge conflict Activity
+1. Checkout `add-feature` branch
+2. Make a change to the first line in `exercises/existing_file.txt`
+3. Commit that change
+4. Checkout `main` branch
+5. Make a different change to the first line in `exercises/existing_file.txt`
+6. Commit that change
+7. Checkout out the `add-feature` branch again
+8. Run `git merge main`
+</div>
