@@ -83,7 +83,6 @@ TODO: Ignoring files example
 ---
 
 # **Undoing Changes**
-
 <div class="text-2xl">
 
 * `git commit --amend` allows you to change the last commit
@@ -103,12 +102,18 @@ TODO: Activity
 ---
 
 # **Removing Files**
+<div class="text-2xl">
 
-* A `.gitignore` file is used to ignore files that you do not want to manage in source control. Some examples are:
-  * Files containing secrets (passwords, API keys, etc.)
-  * Locally installed package files like `.venv/`
-  * Large data files (aka 2 GB csv files)
-* In the event a file gets added that you want to remove, you can use the command `git rm --cache /path/to/filename`
+* In the event a file gets added that you want to remove, you can use the\
+`git rm` command:
+* If you want to completely remove the file, you can do: 
+  * `git rm path/to/file`
+* If you want to just stop tracking it in source control you can do:
+  * `git rm --cached path/to/filename`
+* If you want to remove an entire directory:
+  * `git rm -r path/to/directory`
+* Last, you need to commit the removal change using `git commit`
+</div>
 
 ---
 

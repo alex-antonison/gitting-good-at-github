@@ -10,18 +10,24 @@
 # **What are Branches?**
 
 * A branch lets you work on changes separately from the main code.
-  * It is a good habit to always working branches
   * For individual projects, working in `main` is "okay"
+  * It is a good habit to always work in branches
   * For team based projects, always need to create branches
 
 ---
 
 # **Working with Branches**
+<div class="text-2xl">
 
-* You create a branch with either two approaches:
-  * Create a branch `git branch {insert-descriptive-branch-name}`
-  * Create and checkout a branch `git checkout -b {insert-descriptive-branch-name}`
-* To delete a branch `git checkout main` -> `git branch -D {insert-descriptive-branch-name}`
+* Create a branch and then checkout that branch:
+  * Create a branch `git branch {insert-descriptive-branch-name}` 
+  * To checkout a `git checkout {insert-descriptive-branch-name}`
+* Create and checkout a branch:
+  * `git checkout -b {insert-descriptive-branch-name}`
+* To delete a branch
+  * `git checkout main`
+  * `git branch -D {insert-descriptive-branch-name}`
+</div>
 
 ---
 
