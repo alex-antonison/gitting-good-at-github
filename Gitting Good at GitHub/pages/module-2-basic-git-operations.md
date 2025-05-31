@@ -134,3 +134,11 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 2. Stage the `new_folder/new_file.txt` file.
 3. Commit the `new_folder/new_file.txt` file.
 4. Remove the whole folder `git rm -r new_folder/`
+5. Commit the removal `git commit -m"Remove new_folder"`
+
+# **Removing Files (Activity Part 2)**
+
+1. Add a `.secrets` folder to the project.
+2. Add a `.env` file to the `.secrets` directory.
+3. Add and commit the `.env` file.
+4. 
