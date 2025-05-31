@@ -49,7 +49,8 @@ TODO: Ignoring files example
 <div class="text-2xl">
 
 * You can either add all files with `git add -A` or `git add path/to/filename`
-* Once a file is being tracked, you can then `commit` the changes with
+  * Tools like GitHub Desktop and VS Code's Source Control Panel are helpful to see all files
+* Once a file is being tracked and staged, you can then `commit` the changes with
   * `git commit -m"{insert message here}"`
 * To commit all tracked files, you can use the `-a` argument:
   * `git commit -am"{insert message here}"`
