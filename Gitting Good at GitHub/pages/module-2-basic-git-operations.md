@@ -102,6 +102,13 @@ git clone {repository link}
 
 1. To undo your last commit, run `git reset HEAD~1`
 
+<div class="text-3xl">
+You can explore other ways of changing history, but suggest using GitHub Desktop.
+
+* git commit --amend
+* git revert
+</div>
+
 ---
 
 # **Removing Files**
