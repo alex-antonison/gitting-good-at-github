@@ -43,16 +43,16 @@ git clone {repository link}
 
 TODO: Ignoring files example
 
+---
+
 # **Committing Changes**
 <div class="text-2xl">
 
 * You can either add all files with `git add -A` or `git add path/to/filename`
-* Once a file is being tracked, you can then `commit` the changes with `git commit -m"{insert message here}"`
-  * When do you commit?
-    * Committing too often leads to noisy commits
-    * Committing too infrequently makes it hard to find changes
-  * _The best time to commit is when you have completed a "thought"_
-    * This could be when you finish a function, update some business logic, etc.
+* Once a file is being tracked, you can then `commit` the changes with
+  * `git commit -m"{insert message here}"`
+* To commit all tracked files, you can use the `-a` argument:
+  * `git commit -am"{insert message here}"`
 </div>
 
 ---
@@ -88,9 +88,7 @@ TODO: Ignoring files example
 * `git commit --amend` allows you to change the last commit
   * Update git commit message
 * `git reset HEAD~1`
-  * This simply undoes the last commit
-* `git revert HEAD`
-  * This will create a new commit reverting your last commit
+  * This simply undoes the last commit with files intact
 * `git checkout origin/main path/to/filename`
   * This will reset the file to what is in the main branch
 </div>
@@ -103,7 +101,7 @@ TODO: Activity
 
 ---
 
-# **Ignoring and Removing Files**
+# **Removing Files**
 
 * A `.gitignore` file is used to ignore files that you do not want to manage in source control. Some examples are:
   * Files containing secrets (passwords, API keys, etc.)
@@ -113,6 +111,6 @@ TODO: Activity
 
 ---
 
-# **Ignoring and Removing Files (Activity)**
+# **Removing Files (Activity)**
 
 TODO: Ignore and remove activity
