@@ -45,7 +45,7 @@ git clone {repository link}
 1. Create a directory `new_folder`
 2. Create a file `new_file.txt` in the `new_folder` directory.
 3. Add `new_folder/` to the `.gitignore` file in the root project.
-4. To the root project, add a file called ` new_file.csv`
+4. To the root project, add a file called `new_file.csv`
 5. Add `*.csv` to the `.gitignore` file.
 
 ---
@@ -111,7 +111,7 @@ TODO: Activity
 
 * In the event a file gets added that you want to remove, you can use the\
 `git rm` command:
-* If you want to completely remove the file, you can do: 
+* If you want to completely remove the file, you can do:
   * `git rm path/to/file`
 * If you want to just stop tracking it in source control you can do:
   * `git rm --cached path/to/filename`
