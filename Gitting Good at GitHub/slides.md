@@ -23,7 +23,7 @@ title: Gitting Good at GitHub
 
 ---
 
-# Agenda
+# **Agenda**
 
 * Module 1 - Introduction to Version Control and Git
 * Module 2 - Basic Git Operations

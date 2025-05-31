@@ -1,4 +1,4 @@
-# Module 4 - Collaboration on GitHub
+# **Module 4 - Collaboration on GitHub**
 
 * Branching Strategies
 * Creating Pull Requests
@@ -7,14 +7,14 @@
 
 ---
 
-# Branching Strategies
+# **Branching Strategies**
 
 * **Git Flow.** A branching model that uses feature, develop, release, and hotfix branches to manage complex release cycles with multiple environments.
 * **Trunk-Based Development.** A streamlined approach where developers work in short-lived branches to enable continuous integration and rapid delivery.
 
 ---
 
-# Creating Pull Requests
+# **Creating Pull Requests**
 
 * [To create a successful Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request), it should convey the following:
   * **Context.** Why are these changes being made to the code base?
@@ -23,7 +23,7 @@
 
 ---
 
-# Reviewing Pull Requests
+# **Reviewing Pull Requests**
 
 * [When reviewing a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request), you can do a couple of things:
   * **In-line Comments.** Making in-line comments helps direct someone directly to a bit of code.
@@ -34,7 +34,7 @@
 layout: two-cols
 ---
 
-# Merge Types
+# **Merge Types**
 
 * Merge
 * Squash and merge (squerge)

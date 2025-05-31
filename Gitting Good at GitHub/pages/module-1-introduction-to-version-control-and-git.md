@@ -1,4 +1,4 @@
-# Module 1 - Introduction to Version Control and Git
+# **Module 1 - Introduction to Version Control and Git**
 
 * What is Version Control?
   * What are the benefits of Version Control?
@@ -9,14 +9,14 @@
 
 ---
 
-# What is Version Control?
+# **What is Version Control?**
 
 * Version control is a tool that allows you to track changes to files over time.
 * This is most effective when working with text files but also works with other files.
 
 ---
 
-# What are the benefits of Version Control?
+# **What are the benefits of Version Control?**
 
 * **Track Changes.** You can see who changed what to files over time.
 * **File History.** Ability to revert back to previous versions of a file.
@@ -24,7 +24,7 @@
 
 ---
 
-# What is Git?
+# **What is Git?**
 
 * Git is a distributed version control system used to track changes.
 * Changes are tracked locally on your computer and then synchronized with a remote repository (like GitHub).
@@ -33,7 +33,7 @@
 
 ---
 
-# Key Git Concepts
+# **Key Git Concepts**
 
 <div class="text-2xl">
 
@@ -46,7 +46,7 @@
 
 ---
 
-# What is GitHub?
+# **What is GitHub?**
 
 * An online platform to store, manage, and track changes to code using Git.
 * A **communication** platform.
@@ -56,7 +56,7 @@
 
 ---
 
-# Setting up Git with GitHub
+# **Setting up Git with GitHub**
 
 * Install GitHub Desktop at [https://github.com/apps/desktop](https://github.com/apps/desktop)
 * Authenticate with GitHub.

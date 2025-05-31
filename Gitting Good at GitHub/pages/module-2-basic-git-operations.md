@@ -1,15 +1,15 @@
-# Module 2 - Basic Git Operations
+# **Module 2 - Basic Git Operations**
 
 * Getting started working with Repositories
 * Committing Changes
 * Undoing Changes
-* Removing Files
+* Ignoring and Removing Files
 
 ---
 layout: two-cols
 ---
 
-# Getting started working with Repositories
+# **Getting started working with Repositories**
 <div class="text-2xl">
 
 1. [Creating a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories)
@@ -29,7 +29,7 @@ git clone {repository link}
 
 ---
 
-# Committing Changes
+# **Committing Changes**
 <div class="text-2xl">
 
 * You can either add all files with `git add -A` or `git add {file name}`
@@ -43,7 +43,7 @@ git clone {repository link}
 
 ---
 
-# Committing Changes (Activity)
+# **Committing Changes (Activity)**
 
 1. Create a file in `exercises` called `new_file.txt`
 2. Add some text to it.
@@ -53,7 +53,7 @@ git clone {repository link}
 
 ---
 
-# Undoing Changes
+# **Undoing Changes**
 
 <div class="text-2xl">
 
@@ -69,6 +69,22 @@ git clone {repository link}
 
 ---
 
-# Undoing Changes (Activity)
+# **Undoing Changes (Activity)**
 
 TODO: Activity
+
+---
+
+# **Ignoring and Removing Files**
+
+* A `.gitignore` file is used to ignore files that you do not want to manage in source control. Some examples are:
+  * Files containing secrets (passwords, API keys, etc.)
+  * Locally installed package files like `.venv/`
+  * Large data files (aka 2 GB csv files)
+* In the event a file gets added that you want to remove, you can use the command `git rm --cache /path/to/filename`
+
+---
+
+# **Ignoring and Removing Files (Activity)**
+
+TODO: Ignore and remove activity

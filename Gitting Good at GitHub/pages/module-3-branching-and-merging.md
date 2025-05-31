@@ -1,4 +1,4 @@
-# Module 3 - Branching and Merging
+# **Module 3 - Branching and Merging**
 
 * What are Branches?
 * Working with Branches
@@ -7,7 +7,7 @@
 
 ---
 
-# What are Branches?
+# **What are Branches?**
 
 * A branch lets you work on changes separately from the main code.
   * It is a good habit to always working branches
@@ -16,7 +16,7 @@
 
 ---
 
-# Working with Branches
+# **Working with Branches**
 
 * You create a branch with either two approaches:
   * Create a branch `git branch {insert-descriptive-branch-name}`
@@ -25,13 +25,13 @@
 
 ---
 
-# Working with Branches (Activity)
+# **Working with Branches (Activity)**
 
 TODO: Branch Activity
 
 ---
 
-# Merging Branches
+# **Merging Branches**
 <div class="text-2xl">
 
 * To merge a branch locally, you do `git merge {insert-branch-name}`
@@ -49,7 +49,7 @@ TODO: Branch Activity
 layout: two-cols
 ---
 
-# Merge Conflicts
+# **Merge Conflicts**
 
 * Occurs when changes in two branches **affect the same part of a file** and Git can't automatically decide which change to keep, requiring manual resolution.
 
@@ -61,7 +61,7 @@ layout: two-cols
 
 ---
 
-# Merge Conflict (Activity)
+# **Merge Conflict (Activity)**
 
 TODO: Merge conflict Activity
 

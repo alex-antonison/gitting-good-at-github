@@ -10,6 +10,8 @@ This course assumes that participants have a GitHub Account, have git, GitHub, a
 
 This session be broken into the following modules:
 
+TODO: Update this to match new presentation structure
+
 1. Introduction to Version Control and Git
    1. What is Version Control?
    2. What is Git?
