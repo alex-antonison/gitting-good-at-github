@@ -42,7 +42,11 @@ git clone {repository link}
 
 # **Ignoring Files (Activity)**
 
-TODO: Ignoring files example
+1. Create a directory `new_folder`
+2. Create a file `new_file.txt` in the `new_folder` directory.
+3. Add `new_folder/` to the `.gitignore` file in the root project.
+4. To the root project, add a file called ` new_file.csv`
+5. Add `*.csv` to the `.gitignore` file.
 
 ---
 

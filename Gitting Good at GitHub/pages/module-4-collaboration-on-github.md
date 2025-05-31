@@ -22,6 +22,7 @@
   * **Description.** You should include a summary of the changes being made.
   * **Tests + Documentation.** You should include any required tests or documentation.
   * **Pull Request Template.** Streamlines organizing Pull Request descriptions.
+  * **Draft Pull Request.** Create a "draft" pull request indicating a PR is still in progress.
 </div>
 ---
 
