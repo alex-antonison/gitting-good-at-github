@@ -1,9 +1,10 @@
 # **Module 2 - Basic Git Operations**
 
 * Getting started working with Repositories
+* Ignoring Files
 * Committing Changes
 * Undoing Changes
-* Ignoring and Removing Files
+* Removing Files
 
 ---
 layout: two-cols
@@ -29,10 +30,23 @@ git clone {repository link}
 
 ---
 
+# **Ignoring Files**
+
+* A `.gitignore` file is used to ignore files that you do not want to manage in source control. Some examples are:
+  * Files containing secrets (passwords, API keys, etc.)
+  * Locally installed package files like `.venv/`
+  * Large data files (aka 2 GB csv files)
+
+---
+
+# **Ignoring Files (Activity)**
+
+TODO: Ignoring files example
+
 # **Committing Changes**
 <div class="text-2xl">
 
-* You can either add all files with `git add -A` or `git add {file name}`
+* You can either add all files with `git add -A` or `git add path/to/filename`
 * Once a file is being tracked, you can then `commit` the changes with `git commit -m"{insert message here}"`
   * When do you commit?
     * Committing too often leads to noisy commits
@@ -63,7 +77,7 @@ git clone {repository link}
   * This simply undoes the last commit
 * `git revert HEAD`
   * This will create a new commit reverting your last commit
-* `git checkout origin/main {path/to/file name}`
+* `git checkout origin/main path/to/filename`
   * This will reset the file to what is in the main branch
 </div>
 
@@ -75,13 +89,15 @@ TODO: Activity
 
 ---
 
-# **Ignoring and Removing Files**
+# **Removing Files**
 
-* A `.gitignore` file is used to ignore files that you do not want to manage in source control. Some examples are:
-  * Files containing secrets (passwords, API keys, etc.)
-  * Locally installed package files like `.venv/`
-  * Large data files (aka 2 GB csv files)
-* In the event a file gets added that you want to remove, you can use the command `git rm --cache /path/to/filename`
+<div class="text-4xl leading-tight break-words whitespace-pre-wrap">
+  In the event a file gets added that you want to remove, you can use the command:
+
+  <code class="block text-base mt-2 bg-gray-100 p-2 rounded">
+    git rm --cached path/to/filename
+  </code>
+</div>
 
 ---
 
