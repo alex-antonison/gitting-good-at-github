@@ -133,4 +133,4 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 1. Remove `new_folder` from `.gitignore`
 2. Stage the `new_folder/new_file.txt` file.
 3. Commit the `new_folder/new_file.txt` file.
-4. 
+4. Remove the whole folder `git rm -r new_folder/`
