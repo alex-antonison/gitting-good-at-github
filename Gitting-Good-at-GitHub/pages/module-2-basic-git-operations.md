@@ -42,11 +42,11 @@ git clone {repository link}
 
 # **Ignoring Files (Activity)**
 
-1. Create a directory `new_folder`
-2. Create a file `new_file.txt` in the `new_folder` directory.
-3. Add `new_folder/` to the `.gitignore` file in the root project.
-4. To the root project, add a file called `new_file.csv`
-5. Add `*.csv` to the `.gitignore` file.
+1. Create a directory <span style="color: blue;">`new_folder`</span>
+2. Create a file <span style="color: blue;">`new_file.txt`</span> in the <span style="color: blue;">`new_folder`</span> directory.
+3. Add <span style="color: blue;">`new_folder/`</span> to the <span style="color: green;">`.gitignore`</span> file in the root project.
+4. To the root project, add a file called <span style="color: orange;">`new_file.csv`</span>
+5. Add `*.csv` to the <span style="color: green;">`.gitignore`</span> file.
 
 ---
 
@@ -67,8 +67,8 @@ git clone {repository link}
 # **Committing Changes (Activity)**
 <div class="text-2xl">
 
-1. Make changes to the `existing_file.txt`
-2. Create a file in `exercises` directory called `new_file.txt` and add text to it
+1. Make changes to the <span style="color: blue;">`existing_file.txt`</span>
+2. Create a file in <span style="color: blue;">`exercises`</span> directory called <span style="color: blue;">`new_file.txt`</span> and add text to it
 3. `git commit -am "{insert your descriptive message here}"`
 4. `git status`
 5. `git add exercises/new_file.txt`
@@ -131,9 +131,9 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 
 # **Removing Files (Activity)**
 
-1. Remove `new_folder` from `.gitignore`
-2. Stage the `new_folder/new_file.txt` file.
-3. Commit the `new_folder/new_file.txt` file.
+1. Remove <span style="color: orange;">`new_folder`</span> from <span style="color: green;">`.gitignore`</span>
+2. `git add new_folder/new_file.txt` file.
+3. `git commit "New file commit message"`.
 4. Remove the whole folder `git rm -r new_folder/`
 5. Commit the removal `git commit -m"Remove new_folder"`
 
@@ -141,9 +141,9 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 
 # **Removing Files (Activity Part 2)**
 
-1. Add a `.secrets` folder to the project.
-2. Add a `.env` file to the `.secrets` directory.
+1. Add a <span style="color: red;">`.secrets`</span> folder to the project.
+2. Add a <span style="color: red;">`.env`</span> file to the <span style="color: red;">`.secrets`</span> directory.
 3. `git add -A` and `git commit -m "Add .env file"`
-4. Add `.secrets/` to the `.gitignore` file.
-5. Remove the `.env` file from git cache
+4. Add <span style="color: red;">`.secrets/`</span> to the <span style="color: green;">`.gitignore`</span> file.
+5. Remove the <span style="color: red;">`.env`</span> file from git cache
    1. `git rm --cache .secrets/.env`

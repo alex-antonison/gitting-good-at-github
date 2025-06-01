@@ -52,4 +52,21 @@ This session be broken into the following modules:
 
 ## Resources
 
-TODO: Add all links to this section for quick access
+|link|description|
+|-|-|
+|[https://github.com/apps/desktop](https://github.com/apps/desktop)|GitHub Desktop Application|
+|[https://code.visualstudio.com/docs/sourcecontrol/overview](https://code.visualstudio.com/docs/sourcecontrol/overview)|Using source control in VS Code|
+|[Creating a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories)|How to create a repository in GitHub|
+|[Forking a repository in GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository)|How to fork a GitHub repository|
+|[Creating a GitHub Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)|How to create a pull request in GitHub|
+|[Reviewing a Pull Request in GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request)|Different ways to provide feedback in a GitHub Pull Request|
+
+### Suggested Tools
+
+|link|description|
+|-|-|
+|[pre-commit](https://pre-commit.com/)|A utility that runs commands before each commit to improve code quality|
+|[sqlfluff](https://docs.sqlfluff.com/en/latest/production/pre_commit.html)|A SQL linting and formatting tool|
+|[ruff](https://github.com/astral-sh/ruff)|A python linting and formatting tool|
+|[dbt-osmosis](https://github.com/z3z1ma/dbt-osmosis)|A tool that helps auto-generate documentation for dbt|
+|[GitHub Actions](https://github.com/features/actions)|GitHub Actions is GitHub's CI/CD tool but can also be used for running code on a schedule|

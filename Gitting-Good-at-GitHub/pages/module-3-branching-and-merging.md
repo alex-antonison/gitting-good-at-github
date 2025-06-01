@@ -59,7 +59,7 @@
 # **Merging Branches (Activity)**
 
 1. Create a branch `git branch add-feature`
-2. Create a file `branch_test_file.txt` and add it
+2. Create a file <span style="color: blue;">`branch_test_file.txt`</span> and add it
    1. `git add branch_test_file.txt`
    2. `git commit -m "Add branch test file"`
 3. `git checkout add-feature` (Swap to add-feature branch)
@@ -86,10 +86,10 @@ layout: two-cols
 <div class="text-2xl">
 
 1. `git checkout main` (swap back to main)
-2. Make a change to the first line in `exercises/existing_file.txt`
+2. Make a change to the first line in <span style="color: blue;">`exercises/existing_file.txt`</span>
 3. `git commit -am"Commit message for existing_file.txt"`
 4. `git checkout add-feature` (swap back to add-feature)
-5. Make a different change to the first line in `exercises/existing_file.txt`
+5. Make a different change to the first line in <span style="color: blue;">`exercises/existing_file.txt`</span>
 6. `git commit -am"Commit message for existing_file.txt"`
 7. Run `git merge main`
 8. You can use the built in VS Code or GitHub Desktop to resolve the conflict.
