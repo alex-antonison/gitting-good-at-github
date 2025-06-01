@@ -49,3 +49,7 @@ This session be broken into the following modules:
 ## How to Export Slides
 
 1. Run `make export`
+
+## Resources
+
+TODO: Add all links to this section for quick access
