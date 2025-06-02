@@ -1,1 +1,1 @@
-Simple text in existing file! This is my change.
+Simple text in existing file! This is my change. My change in add-feature
