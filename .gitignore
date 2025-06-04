@@ -1,4 +1,4 @@
 .archive/
 .DS_Store
 .vscode/
-.secrets/
+# session gitignore
