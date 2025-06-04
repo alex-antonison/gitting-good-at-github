@@ -135,7 +135,7 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 2. `git add new_folder/new_file.txt` file.
 3. `git commit -m "New file commit message"`.
 4. Remove the whole folder `git rm -r new_folder/`
-5. Commit the removal `git commit -m"Remove new_folder"`
+5. Commit the removal `git commit -m "Remove new_folder"`
 
 ---
 
@@ -147,3 +147,4 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 4. Add <span style="color: red;">`.secrets/`</span> to the <span style="color: green;">`.gitignore`</span> file.
 5. Remove the <span style="color: red;">`.env`</span> file from git cache
    1. `git rm --cache .secrets/.env`
+6. [Follow this guide for removing from history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
