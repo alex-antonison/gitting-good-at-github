@@ -1,6 +1,7 @@
 # **Module 4 - Collaboration on GitHub**
 
 * Branching Strategies
+* Working with a Ticket
 * Creating Pull Requests
 * Reviewing Pull Requests
 * Merge Types
@@ -14,6 +15,18 @@
 
 ---
 
+# **Working with a Ticket**
+<div class="text-2xl">
+
+* [Working with tickets](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) is a common practice to track tasks, bugs, or features.
+* _If a ticket does not exist,_ while there are some circumstances where you may not need a ticket, it is generally a good practice to create one even for ad hoc requests or small changes.
+  * Creating a ticket is an opportunity to take a step back and think about the work you are about to do, which can help clarify the goals and the scope of changes or an ad hoc data request.
+* Tickets help provide context and create a record of the work being done.
+* Tickets can be used to show how a team provides value to the organization.
+</div>
+
+---
+
 # **Creating Pull Requests**
 <div class="text-2xl">
 
@@ -24,6 +37,7 @@
   * **Pull Request Template.** Streamlines organizing Pull Request descriptions.
   * **Draft Pull Request.** Create a "draft" pull request indicating a PR is still in progress.
 </div>
+
 ---
 
 # **When to Create a Pull Request**
