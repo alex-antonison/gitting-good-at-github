@@ -54,7 +54,7 @@
 * An online platform to store, manage, and track changes to code using Git.
 * A **communication** platform.
 * **GitHub Actions.** for running and deploying code.
-* **GitHub Pages.** for blogs. 
+* **GitHub Pages.** for blogs.
 * Productivity tools like Issue tracking, project management, and a wiki.
 
 ---
