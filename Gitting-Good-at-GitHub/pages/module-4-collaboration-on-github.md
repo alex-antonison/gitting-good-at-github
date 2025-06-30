@@ -26,6 +26,17 @@
 </div>
 ---
 
+# **When to Create a Pull Request**
+<div class="text-2xl">
+
+* When you first start working on a feature, you can create a **Draft Pull Request** which allows you to share your work in progress with others.
+  * This is optional, but it can be helpful to get early feedback or to signal that you are working on something.
+* When you are ready to merge your changes into the main branch, you can create a **Pull Request** or mark your **Draft Pull Request** ready for review.
+  * This is the formal request for others to review and approve your changes before they are merged.
+</div>
+
+---
+
 # **Reviewing Pull Requests**
 
 * [When reviewing a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request), you can do a couple of things:
