@@ -147,7 +147,6 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 4. Add <span style="color: red;">`.secrets/`</span> to the <span style="color: green;">`.gitignore`</span> file.
 5. Remove the <span style="color: red;">`.env`</span> file from git cache
    1. `git rm --cache .secrets/.env`
-
 ---
 
 # **Removing Files from History**
