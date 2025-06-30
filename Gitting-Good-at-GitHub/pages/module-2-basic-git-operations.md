@@ -141,7 +141,6 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 
 # **Removing Files (Activity Part 2)**
 
-
 1. Add a <span style="color: red;">`.secrets`</span> folder to the project.
 2. Add a <span style="color: red;">`.env`</span> file to the <span style="color: red;">`.secrets`</span> directory.
 3. `git add -A` and `git commit -m "Add .env file"`
