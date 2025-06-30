@@ -1,1 +1,1 @@
-Simple text in existing file! This is my change. This is my new change.
+Simple text in existing file!
