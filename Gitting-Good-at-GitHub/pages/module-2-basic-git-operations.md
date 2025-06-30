@@ -147,4 +147,13 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 4. Add <span style="color: red;">`.secrets/`</span> to the <span style="color: green;">`.gitignore`</span> file.
 5. Remove the <span style="color: red;">`.env`</span> file from git cache
    1. `git rm --cache .secrets/.env`
-6. [Follow this guide for removing from history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
+---
+
+# **Removing Files from History**
+<div class="text-2xl">
+
+* In the event you discover a secret has been committed, it is best practices to cycle the secret (e.g. change the password, regenerate the API key, etc.) so that it is no longer valid. You can also [follow this guide for removing from the file with secrets history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
+* It is complex and challenging to modify git history (this is a feature, not a bug).
+* Be very careful to not include secrets in your branch and especially don't merge a branch with secrets into the main branch.
+
+</div>
