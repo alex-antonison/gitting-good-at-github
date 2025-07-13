@@ -21,6 +21,20 @@ title: Gitting Good at GitHub
 
 ### Alex Antonison
 
+<a href="https://www.linkedin.com/in/alexantonison/" target="_blank" style="display:inline-block;margin-top:1em;">
+</a>
+<span style="display:flex;align-items:center;justify-content:center;margin-top:1em;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="40" height="40" style="vertical-align:middle;" />
+  <a href="https://www.linkedin.com/in/alexantonison/" target="_blank" style="vertical-align:middle;margin-left:0.5em;font-size:1.2em;text-decoration:none;color:inherit;">linkedin.com/in/alexantonison</a>
+</span>
+
+<span style="display:flex;align-items:center;justify-content:center;margin-top:0.5em;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="40" height="40" style="vertical-align:middle;" />
+  <a href="https://github.com/alex-antonison" target="_blank" style="vertical-align:middle;margin-left:0.5em;font-size:1.2em;text-decoration:none;color:inherit;">github.com/alex-antonison</a>
+</span>
+
+[alex-antonison.com](https://alex-antonison.com)  
+
 ---
 
 # **Agenda**
