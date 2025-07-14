@@ -2,3 +2,5 @@
 .DS_Store
 .vscode/
 # session gitignore
+new_folder/
+*csv
