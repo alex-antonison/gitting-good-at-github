@@ -67,7 +67,7 @@ git clone {repository link}
 # **Committing Changes (Activity)**
 <div class="text-2xl">
 
-1. Make changes to the <span style="color: blue;">`existing_file.txt`</span>
+1. Make changes to the <span style="color: blue;">`exercises/existing_file.txt`</span>
 2. Create a file in <span style="color: blue;">`exercises`</span> directory called <span style="color: blue;">`new_file.txt`</span> and add text to it
 3. `git commit -am "{insert your descriptive message here}"`
 4. `git status`
@@ -112,24 +112,24 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 
 ---
 
-# **Removing Files**
+# **Removing Tracked Files**
 <div class="text-2xl">
 
-* In the event a file gets added that you want to remove, you can use the\
+* In the event a file gets added that you want to stop tracking, you can use the\
 `git rm` command:
-* If you want to completely remove the file, you can do:
+* If you want to untrack and delete the file, you can do:
   * `git rm path/to/file`
-* If you want to just stop tracking it in source control you can do:
+* If you want to just stop tracking it in git you can do:
   * `git rm --cached path/to/filename`
   * Add the file to your `.gitignore`
-* If you want to remove an entire directory:
+* If you want to untrack an entire directory:
   * `git rm -r path/to/directory`
 * Last, you need to commit the removal change using `git commit`
 </div>
 
 ---
 
-# **Removing Files (Activity)**
+# **Removing Tracked Files (Activity)**
 
 1. Remove <span style="color: orange;">`new_folder`</span> from <span style="color: green;">`.gitignore`</span>
 2. `git add new_folder/new_file.txt` file.
@@ -137,16 +137,6 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 4. Remove the whole folder `git rm -r new_folder/`
 5. Commit the removal `git commit -m "Remove new_folder"`
 
----
-
-# **Removing Files (Activity Part 2)**
-
-1. Add a <span style="color: red;">`.secrets`</span> folder to the project.
-2. Add a <span style="color: red;">`.env`</span> file to the <span style="color: red;">`.secrets`</span> directory.
-3. `git add -A` and `git commit -m "Add .env file"`
-4. Add <span style="color: red;">`.secrets/`</span> to the <span style="color: green;">`.gitignore`</span> file.
-5. Remove the <span style="color: red;">`.env`</span> file from git cache
-   1. `git rm --cache .secrets/.env`
 
 ---
 
