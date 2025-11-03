@@ -137,7 +137,6 @@ You can explore other ways of changing history, but suggest using GitHub Desktop
 4. Remove the whole folder `git rm -r new_folder/`
 5. Commit the removal `git commit -m "Remove new_folder"`
 
-
 ---
 
 # **Removing Files from History**
