@@ -1,33 +1,10 @@
 # **Module 2 - Basic Git Operations**
 
-* Getting started working with Repositories
 * Ignoring Files
 * Staging and Committing Changes
 * When to Commit
 * Undoing Changes
 * Removing Files
-
----
-layout: two-cols
----
-
-# **Getting started working with Repositories**
-<div class="text-2xl">
-
-1. [Creating a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories)
-2. [Forking a repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository)
-
-[github.com/alex-antonison/gitting-good-at-github](https://github.com/alex-antonison/gitting-good-at-github)
-
-Once a repository has been created or forked, you can then clone a repository with
-</div>
-```bash
-git clone {repository link}
-```
-
-::right::
-
-<img src="./images/get-repository-link.png" />
 
 ---
 
