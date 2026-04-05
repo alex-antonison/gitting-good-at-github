@@ -1,3 +1,1 @@
-Simple text in existing file! THis is a change
-
-Making a change
+Simple text in existing file!
