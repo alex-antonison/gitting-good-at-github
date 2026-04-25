@@ -4,10 +4,8 @@
   * What are the benefits of Version Control?
 * What is Git
   * Key Git Concepts
-* What is GitHub
-  * Setting up Git with GitHub
-* What is GitLab
-  * Setting up Git with GitLab
+* What is GitHub/GitLab
+  * Setting up Git with GitHub/GitLab
 
 ---
 
@@ -65,7 +63,6 @@
 
 * Install GitHub Desktop at [https://github.com/apps/desktop](https://github.com/apps/desktop)
 * Authenticate with GitHub.
-* Let's git started!
 
 ---
 
@@ -83,4 +80,3 @@
 
 * Install GitKraken at [https://www.gitkraken.com/git-client](https://www.gitkraken.com/git-client)
 * Authenticate with GitLab.
-* Let's git started!

@@ -1,18 +1,21 @@
 ---
-theme: default
+theme: seriph
 background: https://source.unsplash.com/collection/94734566/1920x1080
 class: text-center
 defaults:
   class: text-3xl
 highlighter: shiki
 lineNumbers: false
-info: |
-  ## Gitting Good at GitHub
-  A guide to Git and GitHub fundamentals
 drawings:
   persist: false
 transition: slide-left
+hideSidebar: true
+themeConfig:
+  sidebar: false
+presenter: false
+routerMode: hash
 title: Gitting Good at GitHub
+contextMenu: false
 ---
 
 # Gitting Good at GitHub
@@ -33,7 +36,7 @@ title: Gitting Good at GitHub
   <a href="https://github.com/alex-antonison" target="_blank" style="vertical-align:middle;margin-left:0.5em;font-size:1.2em;text-decoration:none;color:inherit;">github.com/alex-antonison</a>
 </span>
 
-[alex-antonison.com](https://alex-antonison.com)  
+[alex-antonison.com](https://alex-antonison.com)
 
 ---
 

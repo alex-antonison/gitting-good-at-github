@@ -1,0 +1,9 @@
+name: Project Config
+version: 1.0.0
+schema: v1
+
+context:
+  - provider: file
+    params:
+      path: ".llm/context.md"
+      name: "Course Context: Gitting Good at GitHub"

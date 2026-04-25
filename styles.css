@@ -1,0 +1,7 @@
+/* Force-hide the Slidev Goto dialog */
+#slidev-goto-dialog {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
