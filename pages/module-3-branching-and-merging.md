@@ -3,6 +3,7 @@
 * What are Branches
 * Working with Branches
 * Merging Branches
+* Rebasing Branches
 * Merge Conflicts
 
 ---
@@ -17,13 +18,16 @@
 ---
 
 # **Working with Branches**
-<div class="text-2xl">
+<div class="text-xl">
 
 * Create a branch and then checkout that branch:
   * Create a branch `git branch {insert-descriptive-branch-name}`
-  * To checkout a `git checkout {insert-descriptive-branch-name}` or `git switch {insert-descriptive-branch-name}`
-* Create and checkout a branch:
+* To checkout a branch
+  * `git checkout {insert-descriptive-branch-name}`
+  * `git switch {insert-descriptive-branch-name}`
+* Create and checkout a branch
   * `git checkout -b {insert-descriptive-branch-name}`
+  * `git switch -c {insert-descriptive-branch-name}`
 * To delete a branch
   * `git checkout main`
   * `git branch -D {insert-descriptive-branch-name}`
@@ -33,7 +37,7 @@
 
 # **Working with Branches (Activity)**
 
-1. Create a branch `git checkout -b my-new-branch`
+1. Create a branch `git switch -c my-new-branch`
 2. Delete the branch:
    1. `git checkout main`
    2. `git branch -D my-new-branch`
@@ -66,13 +70,30 @@
 4. Merge main into `add-feature` branch
    1. `git merge main`
 
+
+---
+
+# **Merging Pros and Cons**
+<div class="text-lg">
+
+* **Pros**
+  * Preserves full branch history, so you can trace what happened in team work
+  * Safe for collaboration because merge does **not** rewrite existing commits
+  * PR context stays connected to the merged work
+* **Cons**
+  * Extra merge commits can make history feel noisy over time
+  * Commit history is less linear and can be harder to read quickly
+  * Long-lived branches can lead to more merge conflicts
+
+</div>
+
 ---
 
 # **Rebasing**
 <div class="text-xl">
 
-* Rebasing moves or replays your branch's commits on top of another branch's latest commit
-* Unlike merging, rebasing rewrites commit history to produce a cleaner, linear history
+* Rebasing replays a branch's commits on top of another branch's latest commit
+* Unlike merging, rebasing rewrites commit history to produce a linear history
 * To rebase main into your current branch:
   * `git switch main` (swap to main)
   * `git pull` (update main branch)
@@ -100,6 +121,25 @@
    2. `git rebase main`
 5. Run `git log --oneline` to see the linear history
 </div>
+
+---
+
+# **Rebasing Pros and Cons**
+
+<div class="text-lg">
+
+* **Pros**
+  * Creates a clean, linear commit history that is easier to scan
+  * Helps keep feature work up to date without adding merge commits
+  * Makes `git log --oneline` and history review simpler for many teams
+* **Cons**
+  * Rewrites commit history, which can confuse collaborators on shared branches
+  * Can require force push (`git push --force-with-lease`) after rebasing remote branches
+  * Conflict resolution may need to happen commit-by-commit during the rebase
+
+</div>
+
+
 
 ---
 layout: two-cols
