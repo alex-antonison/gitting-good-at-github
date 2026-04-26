@@ -59,13 +59,6 @@
 
 ---
 
-# **Setting up Git with GitHub**
-
-* Install GitHub Desktop at [https://github.com/apps/desktop](https://github.com/apps/desktop)
-* Authenticate with GitHub.
-
----
-
 # **What is GitLab?**
 
 * Also an online platform to store, manage, and track changes to code using Git.
@@ -76,7 +69,9 @@
 
 ---
 
-# **Setting up Git with GitLab**
+# **Setting up Git with GitHub/GitLab**
 
-* Install GitKraken at [https://www.gitkraken.com/git-client](https://www.gitkraken.com/git-client)
-* Authenticate with GitLab.
+* Github
+    * Install GitHub Desktop at [https://github.com/apps/desktop](https://github.com/apps/desktop)
+* GitLab
+    * Install GitKraken at [https://www.gitkraken.com/git-client](https://www.gitkraken.com/git-client)
