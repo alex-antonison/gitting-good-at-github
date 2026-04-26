@@ -2,7 +2,7 @@
 
 * pre-commit
 * GitHub Actions
-* Rebasing
+* GitLab CI/CD
 
 ---
 
@@ -13,7 +13,6 @@
 * Some common pre-commit hooks are the following:
   * [SQL - sqlfluff pre-commit](https://docs.sqlfluff.com/en/latest/production/pre_commit.html)
   * [Python - ruff pre-commit](https://github.com/astral-sh/ruff-pre-commit)
-  * [dbt Osmosis - docs pre-commit](https://github.com/z3z1ma/dbt-osmosis?tab=readme-ov-file#pre-commit)
   * [git secrets checker](https://github.com/gitleaks/gitleaks)
 </div>
 
@@ -27,10 +26,11 @@
 </div>
 ---
 
-# **Git Rebasing**
+# **GitLab CI/CD**
 <div class="text-2xl">
 
-* [Git Rebasing](https://docs.github.com/en/get-started/using-git/about-git-rebase) is a Git operation that moves or combines a sequence of commits to a new base commit, creating a cleaner, linear project history by integrating changes without merge commits.
-* While git rebasing can create a cleaner history, it is also a destructive in that you are merging multiple commits together.
-* You should avoid doing `git rebase` unless you are in a team environment where that is their standard approach.
+* [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) is GitLab's built-in Continuous Integration/Continuous Deployment (CI/CD) platform that automates build, test, and deployment workflows using pipelines defined in a `.gitlab-ci.yml` file.
+* Similar to GitHub Actions, you can trigger pipelines from events like pushes, merge requests, schedules, or manual runs to validate code and ship updates more reliably.
+
 </div>
+
