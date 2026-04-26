@@ -67,6 +67,41 @@
    1. `git merge main`
 
 ---
+
+# **Rebasing**
+<div class="text-xl">
+
+* Rebasing moves or replays your branch's commits on top of another branch's latest commit
+* Unlike merging, rebasing rewrites commit history to produce a cleaner, linear history
+* To rebase main into your current branch:
+  * `git switch main` (swap to main)
+  * `git pull` (update main branch)
+  * `git checkout {insert-branch-name}` (swap back to your branch)
+  * `git rebase main` (rebase your branch on top of main)
+* **Avoid rebasing branches that others are working on** — rewriting shared history can cause problems
+</div>
+
+---
+
+# **Rebasing (Activity)**
+<div class="text-lg">
+
+1. Make sure you are on the `add-feature` branch: `git checkout add-feature`
+2. Make a new commit on `add-feature`:
+   1. Create a file `rebase_test_file.txt`
+   2. `git add rebase_test_file.txt`
+   3. `git commit -m "Add rebase test file"`
+3. Switch to main and make a new commit:
+   1. `git checkout main`
+   2. Add a line to <span style="color: blue;">`exercises/existing_file.txt`</span>
+   3. `git commit -am "Update existing_file.txt on main"`
+4. Rebase `add-feature` onto main:
+   1. `git checkout add-feature`
+   2. `git rebase main`
+5. Run `git log --oneline` to see the linear history
+</div>
+
+---
 layout: two-cols
 ---
 
