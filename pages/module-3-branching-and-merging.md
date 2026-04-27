@@ -107,19 +107,19 @@
 # **Rebasing (Activity)**
 <div class="text-lg">
 
-1. Make sure you are on the `add-feature` branch: `git checkout add-feature`
-2. Make a new commit on `add-feature`:
-   1. Create a file `rebase_test_file.txt`
-   2. `git add rebase_test_file.txt`
-   3. `git commit -m "Add rebase test file"`
-3. Switch to main and make a new commit:
-   1. `git checkout main`
-   2. Add a line to <span style="color: blue;">`exercises/existing_file.txt`</span>
-   3. `git commit -am "Update existing_file.txt on main"`
-4. Rebase `add-feature` onto main:
-   1. `git checkout add-feature`
-   2. `git rebase main`
-5. Run `git log --oneline` to see the linear history
+1. Create and switch to your feature branch from `main`:
+    1. `git checkout main`
+    2. `git switch -c add-feature`
+2. Make your feature change and commit it:
+    1. Create `rebase_test_file.txt`, then run `git add rebase_test_file.txt`
+    2. `git commit -m "add feature work"`
+3. Simulate main moving ahead, then rebase your branch:
+    1. `git checkout main` and commit a change to <span style="color: blue;">`exercises/existing_file.txt`</span>
+    2. `git checkout add-feature`
+    3. `git rebase main`
+4. Move `main` to include the rebased feature commits:
+    1. `git checkout main`
+    2. `git rebase add-feature`
 </div>
 
 ---

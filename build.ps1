@@ -44,6 +44,20 @@ function Invoke-Task {
         "pdf" {
             Write-Host "🖨 Exporting Slidev deck to PDF..."
             pnpm exec slidev export --format pdf
+            
+            # Rename the exported PDF to Gitting-Good-at-GitHub.pdf
+            $exportedPdf = Get-ChildItem -Path . -Filter "*.pdf" -ErrorAction SilentlyContinue | 
+                           Where-Object { $_.Name -ne "Gitting-Good-at-GitHub.pdf" } |
+                           Sort-Object LastWriteTime -Descending |
+                           Select-Object -First 1
+            
+            if ($null -ne $exportedPdf) {
+                Write-Host "📝 Renaming PDF to Gitting-Good-at-GitHub.pdf..."
+                Move-Item -Path $exportedPdf.FullName -Destination ".\Gitting-Good-at-GitHub.pdf" -Force
+                Write-Host "✅ PDF ready: Gitting-Good-at-GitHub.pdf"
+            } else {
+                Write-Host "⚠️  Could not find exported PDF file"
+            }
         }
 
         "clean" {
