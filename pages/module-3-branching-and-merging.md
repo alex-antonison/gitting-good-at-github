@@ -22,10 +22,10 @@
 
 * Create a branch and then checkout that branch:
   * Create a branch `git branch {insert-descriptive-branch-name}`
-* To checkout a branch
+* To change to a branch
   * `git checkout {insert-descriptive-branch-name}`
   * `git switch {insert-descriptive-branch-name}`
-* Create and checkout a branch
+* Create and change to a branch
   * `git checkout -b {insert-descriptive-branch-name}`
   * `git switch -c {insert-descriptive-branch-name}`
 * To delete a branch

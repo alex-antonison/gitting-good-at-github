@@ -45,8 +45,8 @@ contextMenu: false
 * Module 1 - Introduction to Version Control and Git
 * Module 2 - Basic Git Operations
 * Module 3 - Branching and Merging
-* Module 4 - Collaboration on GitHub
-* Module 5 - Advanced Git and GitHub Features
+* Module 4 - Collaboration on GitHub/GitLab
+* Module 5 - Advanced Git and GitHub/GitLab Features
 * Module 6 - Simulated Project
 
 ---

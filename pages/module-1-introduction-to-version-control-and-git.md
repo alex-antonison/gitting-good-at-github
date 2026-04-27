@@ -21,6 +21,7 @@
 * **Track Changes.** You can see who changed what to files over time.
 * **File History.** Ability to revert back to previous versions of a file.
 * **Collaboration.** Supports collaborating in files.
+* **AI Audit Trail.** Easily track exactly what an LLM like Claude changed during a session — and constrain its work to specific commits for full visibility and control.
 
 ---
 
@@ -29,7 +30,7 @@
 
 * Git is a distributed version control system used to track changes.
   * There are centralized frameworks such as Team Foundation Server (Microsoft) and Subversion (SVN) (Apache)
-* Changes are tracked locally on your computer and then synchronized with a remote repository (like GitHub).
+* Changes are tracked locally on your computer and then synchronized with a remote repository (like GitHub/GitLab).
 * Each change is saved as a snapshot, not just differences.
 * Enables offline work and syncing changes when you're ready.
 </div>
@@ -49,23 +50,18 @@
 
 ---
 
-# **What is GitHub?**
+# **What is GitHub/GitLab?**
+
+<div class="text-2xl">
 
 * An online platform to store, manage, and track changes to code using Git.
 * A **communication** platform.
-* **GitHub Actions.** for running and deploying code.
-* **GitHub Pages.** for blogs.
+* CI/CD
+  * **GitHub Actions.** for running and deploying code.
+  * **GitLab CI/CD.** for running and deploying code.
+* **GitHub/GitLab Pages.** for blogs.
 * Productivity tools like Issue tracking, project management, and a wiki.
-
----
-
-# **What is GitLab?**
-
-* Also an online platform to store, manage, and track changes to code using Git.
-* Also a **communication** platform.
-* **GitLab CI/CD.** for running and deploying code.
-* **GitLab Pages.** for blogs.
-* Productivity tools like Issue tracking, project management, and a wiki.
+</div>
 
 ---
 
