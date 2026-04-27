@@ -1,8 +1,7 @@
 # **Module 6 - Advanced Git and GitHub Features**
 
 * pre-commit
-* GitHub Actions
-* GitLab CI/CD
+* GitHub/GitLab CI/CD
 
 ---
 
