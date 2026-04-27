@@ -15,7 +15,6 @@ This repository contains a beginner-friendly course that teaches:
 Slides are built using Slidev.
 All slides live under:
 
-*   `Code`
 *   `pages/`
 *   Each page is a Markdown-based slide deck section.
 *   LLMs should:
@@ -70,18 +69,18 @@ Avoid:
 
 *   Deep dive into reflog, cherry-pick, bisect (unless **explicitly asked or crucial for context**)
 *   Changing Slidev structure without **prior approval and thorough documentation**
-*   Introducing Git workflows not covered in the course (GitFlow, trunk-based, etc.) unless **directly requested or naturally emerging from topics"
-*   Using community Ollama models (project uses official models only), with **clear attribution for any external resources"
+*   Introducing Git workflows not covered in the course (GitFlow, trunk-based, etc.) unless **directly requested or naturally emerging from topics**
+*   Using community Ollama models (project uses official models only), with **clear attribution for any external resources**
 *   **Overly complex diagrams**; prioritize simplicity and clarity
 
 ### **8. Tasks LLMs Are Expected to Help With (Expanded Scope)**
-Writing or revising slides, including **suggesting additional topics or subtopics**
-Creating diagrams (ASCII), with **options for visual enhancements**
-Generating examples, ensuring **diversity in scenarios and edge cases"
-Explaining Git/GitHub concepts, providing **supplementary resources for further learning"
-Drafting exercises or quizzes, incorporating **varied question types and difficulties"
-Improving clarity and pedagogy, with a focus on **accessibility and inclusivity"
-Ensuring consistency across modules, **highlighting connections between topics"
+*   Writing or revising slides, including **suggesting additional topics or subtopics**
+*   Creating diagrams (ASCII), with **options for visual enhancements**
+*   Generating examples, ensuring **diversity in scenarios and edge cases**
+*   Explaining Git/GitHub concepts, providing **supplementary resources for further learning**
+*   Drafting exercises or quizzes, incorporating **varied question types and difficulties**
+*   Improving clarity and pedagogy, with a focus on **accessibility and inclusivity**
+*   Ensuring consistency across modules, **highlighting connections between topics**
 
 ### **9. Repository Links (Updated)**
 Main repo:

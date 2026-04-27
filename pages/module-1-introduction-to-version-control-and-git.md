@@ -21,6 +21,7 @@
 * **Track Changes.** You can see who changed what to files over time.
 * **File History.** Ability to revert back to previous versions of a file.
 * **Collaboration.** Supports collaborating in files.
+* **AI Audit Trail.** Easily track exactly what an LLM like Claude changed during a session — and constrain its work to specific commits for full visibility and control.
 
 ---
 
@@ -29,7 +30,7 @@
 
 * Git is a distributed version control system used to track changes.
   * There are centralized frameworks such as Team Foundation Server (Microsoft) and Subversion (SVN) (Apache)
-* Changes are tracked locally on your computer and then synchronized with a remote repository (like GitHub).
+* Changes are tracked locally on your computer and then synchronized with a remote repository (like GitHub/GitLab).
 * Each change is saved as a snapshot, not just differences.
 * Enables offline work and syncing changes when you're ready.
 </div>
@@ -49,34 +50,24 @@
 
 ---
 
-# **What is GitHub?**
+# **What is GitHub/GitLab?**
+
+<div class="text-2xl">
 
 * An online platform to store, manage, and track changes to code using Git.
 * A **communication** platform.
-* **GitHub Actions.** for running and deploying code.
-* **GitHub Pages.** for blogs.
+* CI/CD
+  * **GitHub Actions.** for running and deploying code.
+  * **GitLab CI/CD.** for running and deploying code.
+* **GitHub/GitLab Pages.** for blogs.
 * Productivity tools like Issue tracking, project management, and a wiki.
+</div>
 
 ---
 
-# **Setting up Git with GitHub**
+# **Setting up Git with GitHub/GitLab**
 
-* Install GitHub Desktop at [https://github.com/apps/desktop](https://github.com/apps/desktop)
-* Authenticate with GitHub.
-
----
-
-# **What is GitLab?**
-
-* Also an online platform to store, manage, and track changes to code using Git.
-* Also a **communication** platform.
-* **GitLab CI/CD.** for running and deploying code.
-* **GitLab Pages.** for blogs.
-* Productivity tools like Issue tracking, project management, and a wiki.
-
----
-
-# **Setting up Git with GitLab**
-
-* Install GitKraken at [https://www.gitkraken.com/git-client](https://www.gitkraken.com/git-client)
-* Authenticate with GitLab.
+* Github
+    * Install GitHub Desktop at [https://github.com/apps/desktop](https://github.com/apps/desktop)
+* GitLab
+    * Install GitKraken at [https://www.gitkraken.com/git-client](https://www.gitkraken.com/git-client)
