@@ -62,7 +62,7 @@ src: ./pages/module-3-branching-and-merging.md
 ---
 
 ---
-src: ./pages/module-4-collaboration-on-github.md
+src: ./pages/module-4-collaboration-on-github-gitlab.md
 ---
 
 ---
