@@ -1,96 +1,87 @@
 # Project Context: Gitting Good at GitHub
-# Author: Alex Antonison  
-# Purpose: Introductory Git & GitHub teaching course using Slidev
 
-### **1. Course Purpose (Updated with New Insights)**
+**Author:** Alex Antonison
+**Purpose:** Introductory Git & GitHub teaching course built with Slidev
+
+## 1. Course Purpose
+
 This repository contains a beginner-friendly course that teaches:
 
-*   What Git is and why it exists
-*   Core Git concepts (commits, branches, merges, remotes)
-*   GitHub fundamentals (repos, pull requests, issues, forks)
-*   Practical workflows for new developers, **emphasizing collaboration** (Module 4)
-*   Visual, example-driven explanations suitable for classroom teaching, **now with simulated project practice** (Module 5)
+- What Git is and why it exists
+- Core Git concepts (commits, branches, merges, remotes)
+- GitHub fundamentals (repos, pull requests, issues, forks)
+- Practical collaboration workflows (Module 4)
+- Hands-on practice via a simulated project (Module 5)
 
-### **2. Slide Architecture (No Changes)**
-Slides are built using Slidev.
-All slides live under:
+The course is GitHub-only — GitLab is not covered and should not be reintroduced.
 
-*   `pages/`
-*   Each page is a Markdown-based slide deck section.
-*   LLMs should:
-    *   Preserve Slidev frontmatter
-    *   Use Slidev-compatible Markdown
-    *   Avoid breaking code fences, directives, or layout blocks
-    *   Prefer concise bullets over long paragraphs
+## 2. Slide Architecture
 
-### **3. Teaching Style & Constraints (Refined)**
-When generating or editing content:
+Slides are built with Slidev.
 
-*   **Use relatable scenarios** for simple, concrete examples
-*   **Prefer ASCII diagrams** for Git graphs, with **links to visual aids** when beneficial
-*   **Avoid jargon unless explained**, with **brief asides for deeper explanations** if necessary
-*   **Show real Git commands with short explanations**, highlighting **key flags and options**
-*   **Use GitHub UI examples that match the current platform**, noting any **platform-specific behaviors**
-*   **Keep examples consistent across slides**, using the established conventions (Section 6)
+- All slides live under `pages/`, one file per module, assembled via `src:` includes in `slides.md`
+- Each module file's H1 heading must match its filename's module number and `slides.md`'s agenda — these drifted out of sync once already (the Module 5/Module 6 swap), so double-check all three agree after renumbering anything
+- Preserve Slidev frontmatter (`---` blocks, `layout:`, `::right::`)
+- Use Slidev-compatible Markdown; don't break code fences, directives, or layout blocks
+- Prefer concise bullets over long paragraphs
 
-### **4. Git Concepts to Emphasize (Expanded)**
-Reinforce these core ideas:
+## 3. Teaching Style
 
-*   Git tracks snapshots, not diffs
-*   A commit is a snapshot + metadata
-*   Branches are pointers to commits
-*   HEAD points to the current branch
-*   Merging combines histories
-*   Rebasing rewrites history
-*   **Git's distributed nature**, with examples of local and remote workflows
-*   GitHub is a hosting platform, not Git itself, **contrasting with other platforms** (e.g., GitLab)
+- Use relatable, concrete scenarios
+- Prefer ASCII diagrams for Git graphs; link to visual aids when it helps
+- Avoid jargon unless explained
+- Show real Git commands, not placeholders, wherever an activity expects the student to copy-paste
+- Keep examples consistent with the conventions in Section 6
 
-### **5. GitHub Concepts to Emphasize (Updated with Latest Features)**
-Key GitHub topics for this course:
+## 4. Git Concepts to Emphasize
 
-*   Repositories
-*   Pull Requests, including **review and approval processes**
-*   Issues, with **templates and assignment** best practices
-*   Forks vs Branches, discussing **use cases for each**
-*   GitHub Desktop basics, covering **latest updates and features**
-*   **GitHub Pages (now with SEO considerations)** (optional module)
-*   **GitHub Actions (with a focus on CI/CD pipelines)** (optional module)
+- Git tracks snapshots, not diffs
+- A commit is a snapshot + metadata
+- Branches are pointers to commits
+- Merging combines histories and preserves a merge commit; rebasing replays commits onto a new base for linear history with no merge commit
+- Git is distributed — local work first, then synced to a remote
 
-### **6. Example Conventions (Updated for Consistency)**
-Use these conventions consistently:
+## 5. GitHub Concepts to Emphasize
 
-*   Main branch name: `main` (unless **demonstrating alternative naming**)
-*   Example repo name: `demo-repo` (with **variations for different scenarios**)
-*   Example user: `student-user` (supplemented with **other roles for collaboration examples**)
-*   Example remote: `origin` (highlighting **multiple remote configurations** when relevant)
+- Repositories, Pull Requests (review/approval), Issues
+- Forks vs. branches
+- GitHub Desktop basics
+- GitHub Pages, GitHub Actions (Module 6)
 
-### **7. What NOT to Do (Refined Prohibitions)**
-Avoid:
+## 6. Example Conventions
 
-*   Deep dive into reflog, cherry-pick, bisect (unless **explicitly asked or crucial for context**)
-*   Changing Slidev structure without **prior approval and thorough documentation**
-*   Introducing Git workflows not covered in the course (GitFlow, trunk-based, etc.) unless **directly requested or naturally emerging from topics**
-*   Using community Ollama models (project uses official models only), with **clear attribution for any external resources**
-*   **Overly complex diagrams**; prioritize simplicity and clarity
+Match what the existing activities already do rather than introducing new patterns:
 
-### **8. Tasks LLMs Are Expected to Help With (Expanded Scope)**
-*   Writing or revising slides, including **suggesting additional topics or subtopics**
-*   Creating diagrams (ASCII), with **options for visual enhancements**
-*   Generating examples, ensuring **diversity in scenarios and edge cases**
-*   Explaining Git/GitHub concepts, providing **supplementary resources for further learning**
-*   Drafting exercises or quizzes, incorporating **varied question types and difficulties**
-*   Improving clarity and pedagogy, with a focus on **accessibility and inclusivity**
-*   Ensuring consistency across modules, **highlighting connections between topics**
+- Main branch: `main`
+- Feature branches are named for the technique they demonstrate: `add-feature-merge`, `add-feature-rebase`
+- Shared file used to simulate main moving ahead or a conflict: `exercises/existing_file.txt`
+- New files created per activity are named for their purpose: `merge_test_file.txt`, `rebase_test_file.txt`
+- Activity steps must be copy-paste-able shell commands (`touch`, `echo "..." >> file`, `git ...`) — avoid prose like "make a change to the file"
+- When a command has a modern replacement (`git checkout` vs. `git switch`/`git restore`), show both — don't drop the older one outright
 
-### **9. Repository Links (Updated)**
-Main repo:
-<https://github.com/alex-antonison/gitting-good-at-github>
+## 7. What NOT to Do
 
-Slides directory:
-`pages/`
+- Don't deep-dive into `reflog`, `cherry-pick`, or `bisect` unless explicitly asked
+- Don't change Slidev structure (module order, file layout) without confirming with the user first
+- Don't reintroduce GitLab content
+- Don't add overly complex diagrams — prioritize simplicity
 
-**New Resources for LLMs:**
+## 8. Tasks LLMs Are Expected to Help With
 
-*   [Git Official Documentation](https://git-scm.com/docs)
-*   [GitHub Learning Lab](https://lab.github.com/)
-*   [Slidev Documentation](https://sli.dev/docs/)
+- Writing or revising slides
+- Creating ASCII diagrams
+- Generating additional examples or edge cases
+- Explaining Git/GitHub concepts
+- Drafting exercises
+- Keeping modules internally consistent — filenames, in-file headings, the `slides.md` agenda, and `README.md` should always agree
+
+## 9. Repository Links
+
+- Repo: <https://github.com/alex-antonison/gitting-good-at-github>
+- Slides: `pages/`, assembled by `slides.md`
+
+**Reference docs:**
+
+- [Git Official Documentation](https://git-scm.com/docs)
+- [GitHub Learning Lab](https://lab.github.com/)
+- [Slidev Documentation](https://sli.dev/docs/)
