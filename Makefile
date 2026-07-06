@@ -1,3 +1,6 @@
+setup:
+	npm install .
+
 slides:
 	npm run dev
 
