@@ -72,6 +72,7 @@
   * This simply undoes the last commit with files intact
 * `git checkout origin/main path/to/filename`
   * This will reset the file to what is in the main branch
+  * `git restore --source origin/main path/to/filename` does the same thing — `restore` is the newer, more explicit command for this
 </div>
 
 ---
