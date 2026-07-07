@@ -45,9 +45,9 @@ contextMenu: false
 * Module 1 - Introduction to Version Control and Git
 * Module 2 - Basic Git Operations
 * Module 3 - Branching and Merging
-* Module 4 - Collaboration on GitHub/GitLab
-* Module 5 - Advanced Git and GitHub/GitLab Features
-* Module 6 - Simulated Project
+* Module 4 - Collaboration on GitHub
+* Module 5 - Simulated Project
+* Module 6 - Advanced Git and GitHub Features
 
 ---
 src: ./pages/module-1-introduction-to-version-control-and-git.md
@@ -62,13 +62,13 @@ src: ./pages/module-3-branching-and-merging.md
 ---
 
 ---
-src: ./pages/module-4-collaboration-on-github-gitlab.md
+src: ./pages/module-4-collaboration-on-github.md
 ---
 
 ---
-src: ./pages/module-5-advanced-git-and-github-features.md
+src: ./pages/module-5-simulated-project.md
 ---
 
 ---
-src: ./pages/module-6-simulated-project.md
+src: ./pages/module-6-advanced-git-and-github-features.md
 ---

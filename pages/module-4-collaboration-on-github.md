@@ -1,4 +1,4 @@
-# **Module 4 - Collaboration on GitHub/GitLab**
+# **Module 4 - Collaboration on GitHub**
 
 * Branching Strategies
 * Working with a Ticket
@@ -27,7 +27,7 @@
 
 ---
 
-# **Creating Pull/Merge Requests**
+# **Creating Pull Requests**
 <div class="text-2xl">
 
 * [To create a successful Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request), it should convey the following:
@@ -40,7 +40,7 @@
 
 ---
 
-# **When to Create a Pull/Merge Request**
+# **When to Create a Pull Request**
 <div class="text-2xl">
 
 * When you first start working on a feature, you can create a **Draft Pull Request** which allows you to share your work in progress with others.
@@ -51,7 +51,7 @@
 
 ---
 
-# **Reviewing Pull/Merge Requests**
+# **Reviewing Pull Requests**
 
 * [When reviewing a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request), you can do a couple of things:
   * **In-line Code Comments.** Making in-line comments helps direct someone directly to a bit of code.

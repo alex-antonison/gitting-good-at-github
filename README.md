@@ -32,17 +32,17 @@ This session be broken into the following modules:
    2. What is Git
    3. What is GitHub
 2. Basic Git Operations
-   1. Getting started working with Repositories
-   2. Ignoring Files
-   3. Staging and Committing Changes
-   4. When to Commit
-   5. Undoing Changes
-   6. Removing Files
+   1. Ignoring Files
+   2. Staging and Committing Changes
+   3. When to Commit
+   4. Undoing Changes
+   5. Removing Files
 3. Branching and Merging
    1. What are branches
    2. Working with Branches
    3. Merging Branches
-   4. Merge Conflicts
+   4. Rebasing Branches
+   5. Merge Conflicts
 4. Collaboration on GitHub
    1. Branching Strategies
    2. Creating Pull Requests
@@ -53,7 +53,6 @@ This session be broken into the following modules:
 6. Advanced Git and GitHub Features
    1. pre-commit
    2. GitHub Actions
-   3. Rebasing
 
 ## How to Run Slides
 

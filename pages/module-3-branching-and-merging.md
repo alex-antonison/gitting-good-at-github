@@ -61,15 +61,20 @@
 ---
 
 # **Merging Branches (Activity)**
+<div class="text-xl">
 
-1. Create a branch `git branch add-feature`
-2. Create a file <span style="color: blue;">`branch_test_file.txt`</span> and add it
-   1. `git add branch_test_file.txt`
-   2. `git commit -m "Add branch test file"`
-3. `git checkout add-feature` (Swap to add-feature branch)
-4. Merge main into `add-feature` branch
-   1. `git merge main`
-
+1. Create a branch `git switch -c add-feature-merge`
+2. Create a file <span style="color: blue;">`merge_test_file.txt`</span> and add it
+   1. `touch merge_test_file.txt`
+   2. `git add merge_test_file.txt`
+   3. `git commit -m "Add merge test file"`
+3. Simulate main moving ahead:
+   1. `git checkout main`
+   2. `echo "main update" >> exercises/existing_file.txt`
+   3. `git commit -am "Update existing_file.txt on main"`
+4. Merge `add-feature-merge` into `main`
+   1. `git merge add-feature-merge`
+</div>
 
 ---
 
@@ -105,21 +110,19 @@
 ---
 
 # **Rebasing (Activity)**
-<div class="text-lg">
+<div class="text-xl">
 
-1. Create and switch to your feature branch from `main`:
-    1. `git checkout main`
-    2. `git switch -c add-feature`
-2. Make your feature change and commit it:
-    1. Create `rebase_test_file.txt`, then run `git add rebase_test_file.txt`
-    2. `git commit -m "add feature work"`
-3. Simulate main moving ahead, then rebase your branch:
-    1. `git checkout main` and commit a change to <span style="color: blue;">`exercises/existing_file.txt`</span>
-    2. `git checkout add-feature`
-    3. `git rebase main`
-4. Move `main` to include the rebased feature commits:
-    1. `git checkout main`
-    2. `git rebase add-feature`
+1. Create a branch `git switch -c add-feature-rebase`
+2. Create a file <span style="color: blue;">`rebase_test_file.txt`</span> and add it
+   1. `touch rebase_test_file.txt`
+   2. `git add rebase_test_file.txt`
+   3. `git commit -m "Add rebase test file"`
+3. Simulate main moving ahead:
+   1. `git checkout main`
+   2. `echo "main update" >> exercises/existing_file.txt`
+   3. `git commit -am "Update existing_file.txt on main"`
+4. Rebase `add-feature-rebase` onto the updated `main`
+   1. `git rebase add-feature-rebase`
 </div>
 
 ---
@@ -160,10 +163,10 @@ layout: two-cols
 # **Merge Conflict (Activity)**
 <div class="text-2xl">
 
-1. `git checkout main` (swap back to main)
+1. `git checkout main` (if you aren't on main)
 2. Make a change to the first line in <span style="color: blue;">`exercises/existing_file.txt`</span>
 3. `git commit -am"Commit message for existing_file.txt"`
-4. `git checkout add-feature` (swap back to add-feature)
+4. `git checkout add-feature-merge`
 5. Make a different change to the first line in <span style="color: blue;">`exercises/existing_file.txt`</span>
 6. `git commit -am"Commit message for existing_file.txt"`
 7. Run `git merge main`

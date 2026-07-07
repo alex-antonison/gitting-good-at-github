@@ -4,8 +4,8 @@
   * What are the benefits of Version Control?
 * What is Git
   * Key Git Concepts
-* What is GitHub/GitLab
-  * Setting up Git with GitHub/GitLab
+* What is GitHub
+  * Setting up Git with GitHub
 
 ---
 
@@ -29,8 +29,8 @@
 <div class="text-2xl">
 
 * Git is a distributed version control system used to track changes.
-  * There are centralized frameworks such as Team Foundation Server (Microsoft) and Subversion (SVN) (Apache)
-* Changes are tracked locally on your computer and then synchronized with a remote repository (like GitHub/GitLab).
+  * There are centralized frameworks such as Team Foundation Server (Microsoft) and Subversion (SVN, Apache)
+* Changes are tracked locally on your computer and then synchronized with a remote repository (like GitHub).
 * Each change is saved as a snapshot, not just differences.
 * Enables offline work and syncing changes when you're ready.
 </div>
@@ -50,24 +50,23 @@
 
 ---
 
-# **What is GitHub/GitLab?**
+# **What is GitHub?**
 
 <div class="text-2xl">
 
 * An online platform to store, manage, and track changes to code using Git.
-* A **communication** platform.
+* A **communication** platform. Issues and Pull Requests double as discussion threads tied to specific code changes.
 * CI/CD
   * **GitHub Actions.** for running and deploying code.
-  * **GitLab CI/CD.** for running and deploying code.
-* **GitHub/GitLab Pages.** for blogs.
+* **GitHub Pages.** for blogs.
 * Productivity tools like Issue tracking, project management, and a wiki.
 </div>
 
 ---
 
-# **Setting up Git with GitHub/GitLab**
+# **Setting up Git with GitHub**
 
-* Github
-    * Install GitHub Desktop at [https://github.com/apps/desktop](https://github.com/apps/desktop)
-* GitLab
-    * Install GitKraken at [https://www.gitkraken.com/git-client](https://www.gitkraken.com/git-client)
+* Set your identity so commits are attributed to you:
+  * `git config --global user.name "Your Name"`
+  * `git config --global user.email "you@example.com"`
+* Install GitHub Desktop at [https://github.com/apps/desktop](https://github.com/apps/desktop)
