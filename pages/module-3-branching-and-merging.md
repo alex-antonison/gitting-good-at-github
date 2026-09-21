@@ -3,6 +3,7 @@
 * What are Branches
 * Working with Branches
 * Merging and Rebasing
+* Why Some Teams Merge Everything
 * Why Some Teams Rebase Everything
 * Merge Conflicts
 
@@ -138,10 +139,28 @@ After rebase    feature  A---B---E---C'--D'  C' D' = rewritten commits
 
 ---
 
+# **Why Some Teams Merge Everything**
+<div class="text-xl">
+
+Some teams merge for all of their work and never rewrite history. Their
+reasons:
+
+* **The history is what actually happened.** The commits on `main` are the
+  same commits that were written and tested, not rewritten copies
+* **Nobody has to force push.** Merging never rewrites a branch, so there is
+  no chance of overwriting work someone else has already pushed
+* **Conflicts are resolved once.** A rebase can ask you to resolve the same
+  conflict again for each commit it replays
+* **The merge commit records when work came together**, which helps when
+  tracing a release or reviewing history later
+</div>
+
+---
+
 # **Why Some Teams Rebase Everything**
 <div class="text-xl">
 
-Some teams rebase for all of their work so that `main` stays a straight line.
+Other teams rebase for all of their work so that `main` stays a straight line.
 Their reasons:
 
 * **Merge commits carry no information.** "Merge branch 'main' into feature"
@@ -152,9 +171,8 @@ Their reasons:
   commit points at a single change rather than a combination of two
 * **Changelog tools** can build release notes when each commit is one change
 
-Other teams keep merge commits for the opposite reason: they record what
-actually happened and when the work came together. Both approaches are widely
-used — what matters is that a team picks one and stays consistent.
+Both approaches are widely used — what matters is that a team picks one and
+stays consistent.
 </div>
 
 ---
