@@ -4,7 +4,7 @@
 * Working with Branches
 * Merging and Rebasing
 * When to Use Each
-* The Workflow Most Teams Use
+* Why Some Teams Rebase Everything
 * Merge Conflicts
 
 ---
@@ -157,21 +157,23 @@ shared history causes problems for everyone who already has those commits.
 
 ---
 
-# **The Workflow Most Teams Use**
+# **Why Some Teams Rebase Everything**
 <div class="text-xl">
 
-Many teams never merge `main` into a branch at all. Instead:
+Some teams rebase for all of their work so that `main` stays a straight line.
+Their reasons:
 
-1. **Rebase** your branch on `main` to pick up the latest work
-2. **Push** your branch and open a Pull Request
-3. **Squash and merge** the Pull Request on GitHub
+* **Merge commits carry no information.** "Merge branch 'main' into feature"
+  repeated many times can outnumber the commits that changed something
+* **Reverting is simpler.** `git revert {commit}` works directly on a normal
+  commit, while reverting a merge commit means choosing which parent to keep
+* **`git bisect` is easier to read.** Every commit has one parent, so a bad
+  commit points at a single change rather than a combination of two
+* **Changelog tools** can build release notes when each commit is one change
 
-`main` ends up with **one commit per Pull Request**. The work-in-progress
-commits on your branch never reach it, so the history reads as a list of
-completed changes.
-
-This is why some teams turn off "Create a merge commit" in their repository
-settings — more on those options in Module 4.
+Other teams keep merge commits for the opposite reason: they record what
+actually happened and when the work came together. Both approaches are widely
+used — what matters is that a team picks one and stays consistent.
 </div>
 
 ---
