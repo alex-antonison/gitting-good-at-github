@@ -3,6 +3,7 @@
 * What are Branches
 * Working with Branches
 * Merging and Rebasing
+* Two Reasons to Merge or Rebase
 * Why Some Teams Merge Everything
 * Why Some Teams Rebase Everything
 * Merge Conflicts
@@ -71,14 +72,29 @@ After rebase    feature  A---B---E---C'--D'  C' D' = rewritten commits
 
 ---
 
+# **Two Reasons to Merge or Rebase**
+<div class="text-xl">
+
+* **Updating your feature branch.** `main` moved on while you were working and
+  you need to catch up
+  * Someone merged a change that your work depends on
+  * Your Pull Request has conflicts that must be resolved before it can merge
+  * You want to check your work against the latest code before review
+  * Either merging or rebasing does this — the next slides show both
+* **Bringing your finished work into `main`.** Your branch is done and reviewed
+  * On a team this normally happens by merging a Pull Request on GitHub rather
+    than locally
+
+</div>
+
+---
+
 # **Merging Branches**
 <div class="text-2xl">
 
-* To merge a branch locally, you do `git merge {insert-branch-name}`
-* It is common to need to merge `main` into current branch because:
-  * In your Pull Request, you have merge conflicts you need to address
-  * Code has been merged into main that you need for your work
-* To merge main into your current branch
+* To merge another branch into your current branch:
+  * `git merge {insert-branch-name}`
+* To merge `main` into your current branch:
   * `git checkout main` (swap to main)
   * `git pull` (update main branch)
   * `git checkout {insert-branch-name}` (swap back to your branch)
