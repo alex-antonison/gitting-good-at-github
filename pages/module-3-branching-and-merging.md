@@ -4,6 +4,7 @@
 * Working with Branches
 * Merging and Rebasing
 * When to Use Each
+* The Workflow Most Teams Use
 * Merge Conflicts
 
 ---
@@ -125,13 +126,13 @@ shared history causes problems for everyone who already has those commits.
 # **Rebasing Branches**
 <div class="text-xl">
 
-* Rebasing replays a branch's commits on top of another branch's latest commit
-* Unlike merging, rebasing rewrites commit history to produce a linear history
-* To rebase main into your current branch:
+* To rebase `main` into your current branch:
   * `git switch main` (swap to main)
   * `git pull` (update main branch)
   * `git checkout {insert-branch-name}` (swap back to your branch)
   * `git rebase main` (rebase your branch on top of main)
+* Already pushed the branch? Rebasing rewrites it, so you have to force push:
+  * `git push --force-with-lease`
 * **Avoid rebasing branches that others are working on** — rewriting shared history can cause problems
 </div>
 
@@ -152,6 +153,25 @@ shared history causes problems for everyone who already has those commits.
 4. Rebase `add-feature-rebase` onto the updated `main`
    1. `git checkout add-feature-rebase`
    2. `git rebase main`
+</div>
+
+---
+
+# **The Workflow Most Teams Use**
+<div class="text-xl">
+
+Many teams never merge `main` into a branch at all. Instead:
+
+1. **Rebase** your branch on `main` to pick up the latest work
+2. **Push** your branch and open a Pull Request
+3. **Squash and merge** the Pull Request on GitHub
+
+`main` ends up with **one commit per Pull Request**. The work-in-progress
+commits on your branch never reach it, so the history reads as a list of
+completed changes.
+
+This is why some teams turn off "Create a merge commit" in their repository
+settings — more on those options in Module 4.
 </div>
 
 ---

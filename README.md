@@ -42,7 +42,8 @@ This session be broken into the following modules:
    2. Working with Branches
    3. Merging and Rebasing
    4. When to Use Each
-   5. Merge Conflicts
+   5. The Workflow Most Teams Use
+   6. Merge Conflicts
 4. Collaboration on GitHub
    1. Branching Strategies
    2. Creating Pull Requests
