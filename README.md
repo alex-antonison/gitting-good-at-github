@@ -60,11 +60,12 @@ This session be broken into the following modules:
 
 1. [Install node and npm](https://nodejs.org/en/download/)
 2. Install sli.dev `npm i -g @slidev/cli`
-3. Run `make slides`
+3. Install [just](https://github.com/casey/just)
+4. Run `just slides`
 
 ## How to Export Slides
 
-1. Run `make export`
+1. Run `just export`
 
 ## Resources
 
