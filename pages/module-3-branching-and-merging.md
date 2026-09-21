@@ -2,8 +2,8 @@
 
 * What are Branches
 * Working with Branches
-* Merging Branches
-* Rebasing Branches
+* Merging and Rebasing
+* When to Use Each
 * Merge Conflicts
 
 ---
@@ -44,6 +44,50 @@
 
 ---
 
+# **Merging and Rebasing**
+<div class="text-xl">
+
+Both bring work from one branch into another. They differ in the history they leave behind.
+
+* **Merging** joins two branches together and records a **merge commit**
+  * Your original commits stay exactly as they are
+* **Rebasing** replays your commits on top of another branch
+  * Your original commits are **rewritten** as new commits, giving a straight line
+
+</div>
+
+```text
+Before          main     A---B---E
+                              \
+                feature        C---D
+
+After merge     main     A---B---E---M       M = merge commit
+                              \     /
+                               C---D
+
+After rebase    feature  A---B---E---C'--D'  C' D' = rewritten commits
+```
+
+---
+
+# **When to Use Each**
+<div class="text-xl">
+
+* **Reach for merge when:**
+  * The branch is shared and others have already pulled it
+  * You want the full story of how the work came together
+  * You are merging a Pull Request on GitHub — this is the default
+* **Reach for rebase when:**
+  * The branch is yours alone and has not been shared
+  * You want the latest `main` without adding a merge commit
+  * You want `git log` to read as a straight line
+
+**Rule of thumb:** never rebase a branch someone else is working on. Rewriting
+shared history causes problems for everyone who already has those commits.
+</div>
+
+---
+
 # **Merging Branches**
 <div class="text-2xl">
 
@@ -78,23 +122,7 @@
 
 ---
 
-# **Merging Pros and Cons**
-<div class="text-lg">
-
-* **Pros**
-  * Preserves full branch history, so you can trace what happened in team work
-  * Safe for collaboration because merge does **not** rewrite existing commits
-  * PR context stays connected to the merged work
-* **Cons**
-  * Extra merge commits can make history feel noisy over time
-  * Commit history is less linear and can be harder to read quickly
-  * Long-lived branches can lead to more merge conflicts
-
-</div>
-
----
-
-# **Rebasing**
+# **Rebasing Branches**
 <div class="text-xl">
 
 * Rebasing replays a branch's commits on top of another branch's latest commit
@@ -122,27 +150,9 @@
    2. `echo "main update" >> exercises/existing_file.txt`
    3. `git commit -am "Update existing_file.txt on main"`
 4. Rebase `add-feature-rebase` onto the updated `main`
-   1. `git rebase add-feature-rebase`
+   1. `git checkout add-feature-rebase`
+   2. `git rebase main`
 </div>
-
----
-
-# **Rebasing Pros and Cons**
-
-<div class="text-lg">
-
-* **Pros**
-  * Creates a clean, linear commit history that is easier to scan
-  * Helps keep feature work up to date without adding merge commits
-  * Makes `git log --oneline` and history review simpler for many teams
-* **Cons**
-  * Rewrites commit history, which can confuse collaborators on shared branches
-  * Can require force push (`git push --force-with-lease`) after rebasing remote branches
-  * Conflict resolution may need to happen commit-by-commit during the rebase
-
-</div>
-
-
 
 ---
 layout: two-cols

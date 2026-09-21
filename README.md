@@ -40,8 +40,8 @@ This session be broken into the following modules:
 3. Branching and Merging
    1. What are branches
    2. Working with Branches
-   3. Merging Branches
-   4. Rebasing Branches
+   3. Merging and Rebasing
+   4. When to Use Each
    5. Merge Conflicts
 4. Collaboration on GitHub
    1. Branching Strategies
