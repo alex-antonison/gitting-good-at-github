@@ -64,8 +64,8 @@ Before          main     A---B---E
                 feature        C---D
 
 After merge     main     A---B---E---M       M = merge commit
-                              \     /
-                               C---D
+                              \     /        main now includes C and D
+                feature        C---D
 
 After rebase             A---B---E---C'--D'  C' D' = rewritten commits
                                  |       |
