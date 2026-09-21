@@ -3,7 +3,6 @@
 * What are Branches
 * Working with Branches
 * Merging and Rebasing
-* When to Use Each
 * Why Some Teams Rebase Everything
 * Merge Conflicts
 
@@ -68,24 +67,6 @@ After merge     main     A---B---E---M       M = merge commit
 
 After rebase    feature  A---B---E---C'--D'  C' D' = rewritten commits
 ```
-
----
-
-# **When to Use Each**
-<div class="text-xl">
-
-* **Reach for merge when:**
-  * The branch is shared and others have already pulled it
-  * You want the full story of how the work came together
-  * You are merging a Pull Request on GitHub — this is the default
-* **Reach for rebase when:**
-  * The branch is yours alone and has not been shared
-  * You want the latest `main` without adding a merge commit
-  * You want `git log` to read as a straight line
-
-**Rule of thumb:** never rebase a branch someone else is working on. Rewriting
-shared history causes problems for everyone who already has those commits.
-</div>
 
 ---
 
