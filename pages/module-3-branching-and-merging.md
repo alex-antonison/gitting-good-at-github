@@ -2,8 +2,10 @@
 
 * What are Branches
 * Working with Branches
-* Merging Branches
-* Rebasing Branches
+* Merging and Rebasing
+* Two Reasons to Merge or Rebase
+* Why Some Teams Merge Everything
+* Why Some Teams Rebase Everything
 * Merge Conflicts
 
 ---
@@ -44,14 +46,57 @@
 
 ---
 
+# **Merging and Rebasing**
+<div class="text-xl">
+
+Both bring work from one branch into another. They differ in the history they leave behind.
+
+* **Merging** joins two branches together and records a **merge commit**
+  * Your original commits stay exactly as they are
+* **Rebasing** replays your commits on top of another branch
+  * Your original commits are **rewritten** as new commits, giving a straight line
+
+</div>
+
+```text
+Before          main     A---B---E
+                              \
+                feature        C---D
+
+After merge     main     A---B---E---M       M = merge commit
+                              \     /        main now includes C and D
+                feature        C---D
+
+After rebase             A---B---E---C'--D'  C' D' = rewritten commits
+                                 |       |
+                               main   feature
+```
+
+---
+
+# **Two Reasons to Merge or Rebase**
+<div class="text-xl">
+
+* **Updating your feature branch.** `main` moved on while you were working and
+  you need to catch up
+  * Someone merged a change that your work depends on
+  * Your Pull Request has conflicts that must be resolved before it can merge
+  * You want to check your work against the latest code before review
+  * Either merging or rebasing does this — the next slides show both
+* **Bringing your finished work into `main`.** Your branch is done and reviewed
+  * On a team this normally happens by merging a Pull Request on GitHub rather
+    than locally
+
+</div>
+
+---
+
 # **Merging Branches**
 <div class="text-2xl">
 
-* To merge a branch locally, you do `git merge {insert-branch-name}`
-* It is common to need to merge `main` into current branch because:
-  * In your Pull Request, you have merge conflicts you need to address
-  * Code has been merged into main that you need for your work
-* To merge main into your current branch
+* To merge another branch into your current branch:
+  * `git merge {insert-branch-name}`
+* To merge `main` into your current branch:
   * `git checkout main` (swap to main)
   * `git pull` (update main branch)
   * `git checkout {insert-branch-name}` (swap back to your branch)
@@ -78,32 +123,16 @@
 
 ---
 
-# **Merging Pros and Cons**
-<div class="text-lg">
-
-* **Pros**
-  * Preserves full branch history, so you can trace what happened in team work
-  * Safe for collaboration because merge does **not** rewrite existing commits
-  * PR context stays connected to the merged work
-* **Cons**
-  * Extra merge commits can make history feel noisy over time
-  * Commit history is less linear and can be harder to read quickly
-  * Long-lived branches can lead to more merge conflicts
-
-</div>
-
----
-
-# **Rebasing**
+# **Rebasing Branches**
 <div class="text-xl">
 
-* Rebasing replays a branch's commits on top of another branch's latest commit
-* Unlike merging, rebasing rewrites commit history to produce a linear history
-* To rebase main into your current branch:
+* To rebase `main` into your current branch:
   * `git switch main` (swap to main)
   * `git pull` (update main branch)
   * `git checkout {insert-branch-name}` (swap back to your branch)
   * `git rebase main` (rebase your branch on top of main)
+* Already pushed the branch? Rebasing rewrites it, so you have to force push:
+  * `git push --force-with-lease`
 * **Avoid rebasing branches that others are working on** — rewriting shared history can cause problems
 </div>
 
@@ -122,27 +151,47 @@
    2. `echo "main update" >> exercises/existing_file.txt`
    3. `git commit -am "Update existing_file.txt on main"`
 4. Rebase `add-feature-rebase` onto the updated `main`
-   1. `git rebase add-feature-rebase`
+   1. `git checkout add-feature-rebase`
+   2. `git rebase main`
 </div>
 
 ---
 
-# **Rebasing Pros and Cons**
+# **Why Some Teams Merge Everything**
+<div class="text-xl">
 
-<div class="text-lg">
+Some teams merge for all of their work and never rewrite history. Their
+reasons:
 
-* **Pros**
-  * Creates a clean, linear commit history that is easier to scan
-  * Helps keep feature work up to date without adding merge commits
-  * Makes `git log --oneline` and history review simpler for many teams
-* **Cons**
-  * Rewrites commit history, which can confuse collaborators on shared branches
-  * Can require force push (`git push --force-with-lease`) after rebasing remote branches
-  * Conflict resolution may need to happen commit-by-commit during the rebase
-
+* **The history is what actually happened.** The commits on `main` are the
+  same commits that were written and tested, not rewritten copies
+* **Nobody has to force push.** Merging never rewrites a branch, so there is
+  no chance of overwriting work someone else has already pushed
+* **Conflicts are resolved once.** A rebase can ask you to resolve the same
+  conflict again for each commit it replays
+* **The merge commit records when work came together**, which helps when
+  tracing a release or reviewing history later
 </div>
 
+---
 
+# **Why Some Teams Rebase Everything**
+<div class="text-xl">
+
+Other teams rebase for all of their work so that `main` stays a straight line.
+Their reasons:
+
+* **Merge commits carry no information.** "Merge branch 'main' into feature"
+  repeated many times can outnumber the commits that changed something
+* **Reverting is simpler.** `git revert {commit}` works directly on a normal
+  commit, while reverting a merge commit means choosing which parent to keep
+* **`git bisect` is easier to read.** Every commit has one parent, so a bad
+  commit points at a single change rather than a combination of two
+* **Changelog tools** can build release notes when each commit is one change
+
+Both approaches are widely used — what matters is that a team picks one and
+stays consistent.
+</div>
 
 ---
 layout: two-cols

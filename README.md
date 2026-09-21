@@ -40,9 +40,11 @@ This session be broken into the following modules:
 3. Branching and Merging
    1. What are branches
    2. Working with Branches
-   3. Merging Branches
-   4. Rebasing Branches
-   5. Merge Conflicts
+   3. Merging and Rebasing
+   4. Two Reasons to Merge or Rebase
+   5. Why Some Teams Merge Everything
+   6. Why Some Teams Rebase Everything
+   7. Merge Conflicts
 4. Collaboration on GitHub
    1. Branching Strategies
    2. Creating Pull Requests
@@ -74,13 +76,3 @@ This session be broken into the following modules:
 |[Forking a repository in GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository)|How to fork a GitHub repository|
 |[Creating a GitHub Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)|How to create a pull request in GitHub|
 |[Reviewing a Pull Request in GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request)|Different ways to provide feedback in a GitHub Pull Request|
-
-### Suggested Tools
-
-|link|description|
-|-|-|
-|[pre-commit](https://pre-commit.com/)|A utility that runs commands before each commit to improve code quality|
-|[sqlfluff](https://docs.sqlfluff.com/en/latest/production/pre_commit.html)|A SQL linting and formatting tool|
-|[ruff](https://github.com/astral-sh/ruff)|A python linting and formatting tool|
-|[dbt-osmosis](https://github.com/z3z1ma/dbt-osmosis)|A tool that helps auto-generate documentation for dbt|
-|[GitHub Actions](https://github.com/features/actions)|GitHub Actions is GitHub's CI/CD tool but can also be used for running code on a schedule|
