@@ -13,3 +13,4 @@ dist
 components.d.ts
 node_modules
 .aider*
+.envrc
