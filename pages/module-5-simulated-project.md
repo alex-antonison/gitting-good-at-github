@@ -8,7 +8,7 @@ layout: two-cols
 
 This is a sample project for testing working with GitHub
 
-[https://github.com/alex-antonison/git-r-done-enterprises-2026-09-24](https://github.com/alex-antonison/git-r-done-enterprises-2026-09-24)
+[https://github.com/alex-antonison/git-r-done-enterprises-2026-11-12](https://github.com/alex-antonison/git-r-done-enterprises-2026-11-12)
 
 Use the **Code** button to grab the clone URL
 </div>
